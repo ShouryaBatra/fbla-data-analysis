@@ -1,0 +1,7 @@
+category,metric,value,unit,notes,source_label
+venues,confirmed_venue_zones,7,count,DTLA/Exposition/Port/Riviera/Universal City/Valley/Venice,LA28 Games Plan
+venues,competition_venues,40,count,40+ competition venues,LA28 Venues
+venues,no_new_permanent_venues,1,boolean,First Games in 80 years with no new permanent venues,LA28 Venues
+transit,projects_completed_28x28,9,count,Completed as of latest official Metro page,LA Metro 28 by 28
+transit,projects_in_progress_28x28,19,count,In progress as of latest official Metro page,LA Metro 28 by 28
+demographics,la_county_foreign_born_share,33.4,percent,Foreign-born persons share in Los Angeles County,Census QuickFacts
