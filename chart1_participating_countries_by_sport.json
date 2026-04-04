@@ -1,0 +1,47 @@
+{
+  "chart": "Number of Participating Countries by Sport",
+  "x_axis": "Number of Countries",
+  "y_axis": "Sport",
+  "points": [
+    {
+      "sport": "Taekwondo",
+      "countries": 105
+    },
+    {
+      "sport": "Sailing",
+      "countries": 111
+    },
+    {
+      "sport": "Wrestling",
+      "countries": 120
+    },
+    {
+      "sport": "Shooting",
+      "countries": 132
+    },
+    {
+      "sport": "Cycling",
+      "countries": 134
+    },
+    {
+      "sport": "Weightlifting",
+      "countries": 138
+    },
+    {
+      "sport": "Boxing",
+      "countries": 161
+    },
+    {
+      "sport": "Judo",
+      "countries": 168
+    },
+    {
+      "sport": "Swimming",
+      "countries": 186
+    },
+    {
+      "sport": "Athletics",
+      "countries": 203
+    }
+  ]
+}

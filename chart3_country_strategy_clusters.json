@@ -1,0 +1,501 @@
+{
+  "chart": "Country Strategy Clusters (KMeans + PCA)",
+  "x_axis": "PC1",
+  "y_axis": "PC2",
+  "color_map": {
+    "blue": "Specialist",
+    "orange": "Generalist"
+  },
+  "points": [
+    {
+      "country": "Argentina",
+      "pc1": -0.161308,
+      "pc2": 0.266844,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Australia",
+      "pc1": -0.073887,
+      "pc2": 0.13835,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Austria",
+      "pc1": -0.092923,
+      "pc2": -0.011504,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Azerbaijan",
+      "pc1": -0.196483,
+      "pc2": -0.320401,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Bahamas",
+      "pc1": 0.766632,
+      "pc2": 0.035441,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Belarus",
+      "pc1": -0.002876,
+      "pc2": -0.071462,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Belgium",
+      "pc1": -0.097671,
+      "pc2": 0.050258,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Brazil",
+      "pc1": -0.085638,
+      "pc2": 0.065027,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Bulgaria",
+      "pc1": -0.106944,
+      "pc2": -0.115683,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Cameroon",
+      "pc1": -0.085069,
+      "pc2": 0.173006,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Canada",
+      "pc1": 0.001061,
+      "pc2": 0.016198,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Chile",
+      "pc1": -0.090463,
+      "pc2": 0.10897,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "China",
+      "pc1": -0.09787,
+      "pc2": -0.0083,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Colombia",
+      "pc1": -0.036728,
+      "pc2": -0.128399,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Croatia",
+      "pc1": -0.09205,
+      "pc2": 0.004945,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Cuba",
+      "pc1": 0.008025,
+      "pc2": -0.075218,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Czech Republic",
+      "pc1": -0.05173,
+      "pc2": 0.017156,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Denmark",
+      "pc1": -0.122697,
+      "pc2": 0.023474,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Egypt",
+      "pc1": -0.171625,
+      "pc2": -0.240821,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Estonia",
+      "pc1": -0.024791,
+      "pc2": -0.17097,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Ethiopia",
+      "pc1": 0.862361,
+      "pc2": 0.038479,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Finland",
+      "pc1": 0.141396,
+      "pc2": -0.093414,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "France",
+      "pc1": -0.051228,
+      "pc2": -0.003633,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Georgia",
+      "pc1": -0.207556,
+      "pc2": -0.350661,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Germany",
+      "pc1": -0.024922,
+      "pc2": 0.071357,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Ghana",
+      "pc1": -0.178444,
+      "pc2": 0.173894,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Greece",
+      "pc1": 0.010608,
+      "pc2": -0.021513,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Hungary",
+      "pc1": -0.088797,
+      "pc2": -0.013195,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "India",
+      "pc1": -0.243349,
+      "pc2": 0.672151,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Indonesia",
+      "pc1": -0.132679,
+      "pc2": -0.068187,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Iran",
+      "pc1": -0.201033,
+      "pc2": -0.382478,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Ireland",
+      "pc1": 0.042586,
+      "pc2": -0.065695,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Italy",
+      "pc1": -0.076418,
+      "pc2": -0.008021,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Jamaica",
+      "pc1": 0.856183,
+      "pc2": 0.038232,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Japan",
+      "pc1": -0.101704,
+      "pc2": -0.032346,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Kazakhstan",
+      "pc1": -0.113426,
+      "pc2": -0.237151,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Kenya",
+      "pc1": 0.796209,
+      "pc2": 0.023716,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Latvia",
+      "pc1": 0.115899,
+      "pc2": -0.052358,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Lithuania",
+      "pc1": -0.055691,
+      "pc2": 0.002098,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Mexico",
+      "pc1": -0.030529,
+      "pc2": 0.011357,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Mongolia",
+      "pc1": -0.179739,
+      "pc2": -0.266763,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Morocco",
+      "pc1": 0.688146,
+      "pc2": -0.000401,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Netherlands",
+      "pc1": -0.139464,
+      "pc2": 0.229742,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "New Zealand",
+      "pc1": -0.023112,
+      "pc2": 0.05444,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Nigeria",
+      "pc1": 0.252692,
+      "pc2": 0.116817,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "North Korea",
+      "pc1": -0.158165,
+      "pc2": -0.181476,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Norway",
+      "pc1": -0.094011,
+      "pc2": 0.00364,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Pakistan",
+      "pc1": -0.261406,
+      "pc2": 0.738489,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Poland",
+      "pc1": -0.006269,
+      "pc2": -0.030327,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Portugal",
+      "pc1": 0.127339,
+      "pc2": 0.005658,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Romania",
+      "pc1": -0.083065,
+      "pc2": -0.040837,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Russia",
+      "pc1": -0.020517,
+      "pc2": -0.022202,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Serbia",
+      "pc1": -0.13488,
+      "pc2": 0.021277,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Slovakia",
+      "pc1": -0.109161,
+      "pc2": -0.032887,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Slovenia",
+      "pc1": 0.001268,
+      "pc2": -0.014267,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "South Africa",
+      "pc1": 0.113131,
+      "pc2": 0.001578,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "South Korea",
+      "pc1": -0.143277,
+      "pc2": 0.01324,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Spain",
+      "pc1": -0.12173,
+      "pc2": 0.146801,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Sweden",
+      "pc1": -0.017358,
+      "pc2": -0.024064,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Switzerland",
+      "pc1": -0.109822,
+      "pc2": -0.018172,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Taiwan",
+      "pc1": -0.08142,
+      "pc2": -0.054294,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Thailand",
+      "pc1": -0.1467,
+      "pc2": -0.180712,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Trinidad",
+      "pc1": 0.75222,
+      "pc2": 0.018187,
+      "cluster": "Specialist",
+      "color": "blue"
+    },
+    {
+      "country": "Turkey",
+      "pc1": -0.152493,
+      "pc2": -0.3758,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "UK",
+      "pc1": 0.035564,
+      "pc2": 0.068317,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "USA",
+      "pc1": 0.0853,
+      "pc2": 0.019734,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Ukraine",
+      "pc1": -0.024823,
+      "pc2": -0.063615,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Uruguay",
+      "pc1": -0.160304,
+      "pc2": 0.124479,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Uzbekistan",
+      "pc1": -0.174259,
+      "pc2": -0.262305,
+      "cluster": "Generalist",
+      "color": "orange"
+    },
+    {
+      "country": "Zimbabwe",
+      "pc1": -0.218119,
+      "pc2": 0.546181,
+      "cluster": "Generalist",
+      "color": "orange"
+    }
+  ]
+}
