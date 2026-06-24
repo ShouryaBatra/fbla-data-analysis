@@ -1,0 +1,2598 @@
+{
+  "appendixA": {
+    "reference_games": "Rio 2016 (Summer)",
+    "total_athletes": 11179,
+    "n_returning_sports": 34,
+    "top3_share": 76.7,
+    "zones": [
+      {
+        "zone": "Downtown/Exposition Park",
+        "athletes": 4581,
+        "share": 41.0,
+        "n_sports": 12,
+        "load_index": 100.0,
+        "primary_venue": "LA Memorial Coliseum / Convention Center / Crypto.com Arena"
+      },
+      {
+        "zone": "Long Beach",
+        "athletes": 2455,
+        "share": 22.0,
+        "n_sports": 8,
+        "load_index": 53.6,
+        "primary_venue": "Long Beach Arena, Marine Stadium & Convention Center pool"
+      },
+      {
+        "zone": "Carson",
+        "athletes": 1526,
+        "share": 13.7,
+        "n_sports": 5,
+        "load_index": 33.3,
+        "primary_venue": "Dignity Health Sports Park (CSU Dominguez Hills)"
+      },
+      {
+        "zone": "Inglewood",
+        "athletes": 1223,
+        "share": 10.9,
+        "n_sports": 2,
+        "load_index": 26.7,
+        "primary_venue": "SoFi Stadium / Intuit Dome"
+      },
+      {
+        "zone": "Pasadena",
+        "athletes": 609,
+        "share": 5.4,
+        "n_sports": 2,
+        "load_index": 13.3,
+        "primary_venue": "Rose Bowl & Rose Bowl Aquatics Center"
+      },
+      {
+        "zone": "Anaheim",
+        "athletes": 283,
+        "share": 2.5,
+        "n_sports": 1,
+        "load_index": 6.2,
+        "primary_venue": "Honda Center"
+      },
+      {
+        "zone": "Arcadia",
+        "athletes": 200,
+        "share": 1.8,
+        "n_sports": 1,
+        "load_index": 4.4,
+        "primary_venue": "Santa Anita Park"
+      },
+      {
+        "zone": "Pacific Palisades",
+        "athletes": 120,
+        "share": 1.1,
+        "n_sports": 1,
+        "load_index": 2.6,
+        "primary_venue": "Riviera Country Club"
+      },
+      {
+        "zone": "Venice",
+        "athletes": 110,
+        "share": 1.0,
+        "n_sports": 1,
+        "load_index": 2.4,
+        "primary_venue": "Venice Beach"
+      },
+      {
+        "zone": "San Fernando Valley",
+        "athletes": 72,
+        "share": 0.6,
+        "n_sports": 1,
+        "load_index": 1.6,
+        "primary_venue": "Sepulveda Basin"
+      }
+    ],
+    "sport_zone_map": [
+      {
+        "sport": "Volleyball",
+        "zone": "Anaheim",
+        "athletes": 283
+      },
+      {
+        "sport": "Equestrianism",
+        "zone": "Arcadia",
+        "athletes": 200
+      },
+      {
+        "sport": "Cycling",
+        "zone": "Carson",
+        "athletes": 513
+      },
+      {
+        "sport": "Hockey",
+        "zone": "Carson",
+        "athletes": 390
+      },
+      {
+        "sport": "Rugby Sevens",
+        "zone": "Carson",
+        "athletes": 299
+      },
+      {
+        "sport": "Tennis",
+        "zone": "Carson",
+        "athletes": 196
+      },
+      {
+        "sport": "Archery",
+        "zone": "Carson",
+        "athletes": 128
+      },
+      {
+        "sport": "Athletics",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 2269
+      },
+      {
+        "sport": "Judo",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 389
+      },
+      {
+        "sport": "Wrestling",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 346
+      },
+      {
+        "sport": "Boxing",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 283
+      },
+      {
+        "sport": "Weightlifting",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 255
+      },
+      {
+        "sport": "Fencing",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 245
+      },
+      {
+        "sport": "Gymnastics",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 196
+      },
+      {
+        "sport": "Table Tennis",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 172
+      },
+      {
+        "sport": "Badminton",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 172
+      },
+      {
+        "sport": "Taekwondo",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 126
+      },
+      {
+        "sport": "Rhythmic Gymnastics",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 96
+      },
+      {
+        "sport": "Trampolining",
+        "zone": "Downtown/Exposition Park",
+        "athletes": 32
+      },
+      {
+        "sport": "Swimming",
+        "zone": "Inglewood",
+        "athletes": 942
+      },
+      {
+        "sport": "Basketball",
+        "zone": "Inglewood",
+        "athletes": 281
+      },
+      {
+        "sport": "Rowing",
+        "zone": "Long Beach",
+        "athletes": 546
+      },
+      {
+        "sport": "Shooting",
+        "zone": "Long Beach",
+        "athletes": 390
+      },
+      {
+        "sport": "Sailing",
+        "zone": "Long Beach",
+        "athletes": 380
+      },
+      {
+        "sport": "Handball",
+        "zone": "Long Beach",
+        "athletes": 353
+      },
+      {
+        "sport": "Canoeing",
+        "zone": "Long Beach",
+        "athletes": 330
+      },
+      {
+        "sport": "Water Polo",
+        "zone": "Long Beach",
+        "athletes": 258
+      },
+      {
+        "sport": "Synchronized Swimming",
+        "zone": "Long Beach",
+        "athletes": 102
+      },
+      {
+        "sport": "Beach Volleyball",
+        "zone": "Long Beach",
+        "athletes": 96
+      },
+      {
+        "sport": "Golf",
+        "zone": "Pacific Palisades",
+        "athletes": 120
+      },
+      {
+        "sport": "Football",
+        "zone": "Pasadena",
+        "athletes": 473
+      },
+      {
+        "sport": "Diving",
+        "zone": "Pasadena",
+        "athletes": 136
+      },
+      {
+        "sport": "Modern Pentathlon",
+        "zone": "San Fernando Valley",
+        "athletes": 72
+      },
+      {
+        "sport": "Triathlon",
+        "zone": "Venice",
+        "athletes": 110
+      }
+    ],
+    "robustness": {
+      "2008": {
+        "downtown": 41.1,
+        "top3": 76.8
+      },
+      "2012": {
+        "downtown": 41.6,
+        "top3": 76.5
+      },
+      "2016": {
+        "downtown": 41.0,
+        "top3": 76.6
+      }
+    },
+    "scope_note": {
+      "dataset_categories": 34,
+      "la28_returning_sports": 31,
+      "grouped_disciplines": [
+        "Rhythmic Gymnastics (\u2192 Gymnastics)",
+        "Trampolining (\u2192 Gymnastics)",
+        "Beach Volleyball (\u2192 Volleyball)"
+      ]
+    }
+  },
+  "appendixB": {
+    "reference_games": "Rio 2016 (Summer, event-level medal counts)",
+    "model": "Poisson regression (alpha=0.1) on log(population) & log(GDP per capita)",
+    "n_countries": 182,
+    "n_over": 44,
+    "n_under_total": 138,
+    "n_under_focused": 66,
+    "oof_r2": 0.802,
+    "oof_mae": 3.129,
+    "coef": {
+      "log_pop": 0.65,
+      "log_gdp_pc": 0.785
+    },
+    "intercept": -16.534,
+    "overperformers": [
+      {
+        "country": "Russia",
+        "actual": 56,
+        "expected": 15.26,
+        "rapi": 40.74,
+        "gdp_pc": 8663.0,
+        "pop": 145015460
+      },
+      {
+        "country": "UK",
+        "actual": 67,
+        "expected": 30.42,
+        "rapi": 36.58,
+        "gdp_pc": 41258.0,
+        "pop": 65607000
+      },
+      {
+        "country": "Azerbaijan",
+        "actual": 18,
+        "expected": 1.49,
+        "rapi": 16.51,
+        "gdp_pc": 3881.0,
+        "pop": 9757812
+      },
+      {
+        "country": "Kazakhstan",
+        "actual": 18,
+        "expected": 3.62,
+        "rapi": 14.38,
+        "gdp_pc": 7476.0,
+        "pop": 18363600
+      },
+      {
+        "country": "New Zealand",
+        "actual": 18,
+        "expected": 6.03,
+        "rapi": 11.97,
+        "gdp_pc": 40114.0,
+        "pop": 4714100
+      },
+      {
+        "country": "Hungary",
+        "actual": 15,
+        "expected": 3.7,
+        "rapi": 11.3,
+        "gdp_pc": 13216.0,
+        "pop": 9759755
+      },
+      {
+        "country": "Kenya",
+        "actual": 13,
+        "expected": 2.15,
+        "rapi": 10.85,
+        "gdp_pc": 1554.0,
+        "pop": 48139687
+      },
+      {
+        "country": "Uzbekistan",
+        "actual": 13,
+        "expected": 2.42,
+        "rapi": 10.58,
+        "gdp_pc": 2753.0,
+        "pop": 31284568
+      },
+      {
+        "country": "Jamaica",
+        "actual": 11,
+        "expected": 0.82,
+        "rapi": 10.18,
+        "gdp_pc": 5302.0,
+        "pop": 2809915
+      },
+      {
+        "country": "Australia",
+        "actual": 29,
+        "expected": 20.31,
+        "rapi": 8.69,
+        "gdp_pc": 50084.0,
+        "pop": 24190907
+      },
+      {
+        "country": "Ukraine",
+        "actual": 11,
+        "expected": 2.35,
+        "rapi": 8.65,
+        "gdp_pc": 2158.0,
+        "pop": 45616832
+      },
+      {
+        "country": "France",
+        "actual": 42,
+        "expected": 33.7,
+        "rapi": 8.3,
+        "gdp_pc": 37024.0,
+        "pop": 66724104
+      },
+      {
+        "country": "Cuba",
+        "actual": 11,
+        "expected": 2.83,
+        "rapi": 8.17,
+        "gdp_pc": 8111.0,
+        "pop": 11265612
+      },
+      {
+        "country": "Croatia",
+        "actual": 10,
+        "expected": 2.04,
+        "rapi": 7.96,
+        "gdp_pc": 12820.0,
+        "pop": 4106867
+      },
+      {
+        "country": "Denmark",
+        "actual": 15,
+        "expected": 7.47,
+        "rapi": 7.53,
+        "gdp_pc": 54501.0,
+        "pop": 5728010
+      },
+      {
+        "country": "Belarus",
+        "actual": 9,
+        "expected": 1.87,
+        "rapi": 7.13,
+        "gdp_pc": 5040.0,
+        "pop": 9469379
+      },
+      {
+        "country": "Serbia",
+        "actual": 8,
+        "expected": 1.78,
+        "rapi": 6.22,
+        "gdp_pc": 5982.0,
+        "pop": 7058322
+      },
+      {
+        "country": "Ethiopia",
+        "actual": 8,
+        "expected": 1.83,
+        "rapi": 6.17,
+        "gdp_pc": 642.0,
+        "pop": 106718162
+      },
+      {
+        "country": "Georgia",
+        "actual": 7,
+        "expected": 0.84,
+        "rapi": 6.16,
+        "gdp_pc": 4143.0,
+        "pop": 3727505
+      },
+      {
+        "country": "Germany",
+        "actual": 42,
+        "expected": 36.42,
+        "rapi": 5.58,
+        "gdp_pc": 42949.0,
+        "pop": 82348669
+      },
+      {
+        "country": "Czech Republic",
+        "actual": 10,
+        "expected": 5.63,
+        "rapi": 4.37,
+        "gdp_pc": 18754.0,
+        "pop": 10566332
+      },
+      {
+        "country": "Armenia",
+        "actual": 4,
+        "expected": 0.65,
+        "rapi": 3.35,
+        "gdp_pc": 3524.0,
+        "pop": 2992300
+      },
+      {
+        "country": "Netherlands",
+        "actual": 19,
+        "expected": 15.74,
+        "rapi": 3.26,
+        "gdp_pc": 46809.0,
+        "pop": 17030314
+      },
+      {
+        "country": "Lithuania",
+        "actual": 4,
+        "expected": 1.81,
+        "rapi": 2.19,
+        "gdp_pc": 14934.0,
+        "pop": 2877325
+      },
+      {
+        "country": "Italy",
+        "actual": 28,
+        "expected": 25.93,
+        "rapi": 2.07,
+        "gdp_pc": 31392.0,
+        "pop": 60115223
+      },
+      {
+        "country": "Colombia",
+        "actual": 8,
+        "expected": 6.07,
+        "rapi": 1.93,
+        "gdp_pc": 5960.0,
+        "pop": 47437512
+      },
+      {
+        "country": "Slovenia",
+        "actual": 4,
+        "expected": 2.14,
+        "rapi": 1.86,
+        "gdp_pc": 21448.0,
+        "pop": 2065042
+      },
+      {
+        "country": "Poland",
+        "actual": 11,
+        "expected": 9.36,
+        "rapi": 1.64,
+        "gdp_pc": 12464.0,
+        "pop": 37970087
+      },
+      {
+        "country": "Tunisia",
+        "actual": 3,
+        "expected": 1.56,
+        "rapi": 1.44,
+        "gdp_pc": 3848.0,
+        "pop": 11528674
+      },
+      {
+        "country": "Mongolia",
+        "actual": 2,
+        "expected": 0.64,
+        "rapi": 1.36,
+        "gdp_pc": 3620.0,
+        "pop": 3088856
+      },
+      {
+        "country": "Canada",
+        "actual": 22,
+        "expected": 20.89,
+        "rapi": 1.11,
+        "gdp_pc": 42314.0,
+        "pop": 36110803
+      },
+      {
+        "country": "Bahamas",
+        "actual": 2,
+        "expected": 0.93,
+        "rapi": 1.07,
+        "gdp_pc": 30617.0,
+        "pop": 388055
+      },
+      {
+        "country": "Greece",
+        "actual": 6,
+        "expected": 4.95,
+        "rapi": 1.05,
+        "gdp_pc": 17919.0,
+        "pop": 10775971
+      },
+      {
+        "country": "Bulgaria",
+        "actual": 3,
+        "expected": 2.16,
+        "rapi": 0.84,
+        "gdp_pc": 7822.0,
+        "pop": 6894139
+      },
+      {
+        "country": "Burundi",
+        "actual": 1,
+        "expected": 0.16,
+        "rapi": 0.84,
+        "gdp_pc": 233.0,
+        "pop": 11239451
+      },
+      {
+        "country": "Grenada",
+        "actual": 1,
+        "expected": 0.17,
+        "rapi": 0.83,
+        "gdp_pc": 9221.0,
+        "pop": 115130
+      },
+      {
+        "country": "Slovakia",
+        "actual": 4,
+        "expected": 3.19,
+        "rapi": 0.81,
+        "gdp_pc": 16636.0,
+        "pop": 5430798
+      },
+      {
+        "country": "Tajikistan",
+        "actual": 1,
+        "expected": 0.36,
+        "rapi": 0.64,
+        "gdp_pc": 789.0,
+        "pop": 8865631
+      },
+      {
+        "country": "Fiji",
+        "actual": 1,
+        "expected": 0.4,
+        "rapi": 0.6,
+        "gdp_pc": 5364.0,
+        "pop": 919166
+      },
+      {
+        "country": "Niger",
+        "actual": 1,
+        "expected": 0.5,
+        "rapi": 0.5,
+        "gdp_pc": 503.0,
+        "pop": 20685753
+      },
+      {
+        "country": "Kosovo",
+        "actual": 1,
+        "expected": 0.51,
+        "rapi": 0.49,
+        "gdp_pc": 3759.0,
+        "pop": 1777568
+      },
+      {
+        "country": "China",
+        "actual": 70,
+        "expected": 69.63,
+        "rapi": 0.37,
+        "gdp_pc": 8255.0,
+        "pop": 1387790000
+      },
+      {
+        "country": "Ivory Coast",
+        "actual": 2,
+        "expected": 1.66,
+        "rapi": 0.34,
+        "gdp_pc": 1863.0,
+        "pop": 25989405
+      },
+      {
+        "country": "Bahrain",
+        "actual": 2,
+        "expected": 1.85,
+        "rapi": 0.15,
+        "gdp_pc": 23800.0,
+        "pop": 1423726
+      }
+    ],
+    "underperformers": [
+      {
+        "country": "India",
+        "actual": 2,
+        "expected": 21.65,
+        "rapi": -19.65,
+        "gdp_pc": 1708.0,
+        "pop": 1343944296
+      },
+      {
+        "country": "USA",
+        "actual": 121,
+        "expected": 137.86,
+        "rapi": -16.86,
+        "gdp_pc": 57638.0,
+        "pop": 324353340
+      },
+      {
+        "country": "Saudi Arabia",
+        "actual": 0,
+        "expected": 13.46,
+        "rapi": -13.46,
+        "gdp_pc": 22268.0,
+        "pop": 30954198
+      },
+      {
+        "country": "Japan",
+        "actual": 41,
+        "expected": 54.43,
+        "rapi": -13.43,
+        "gdp_pc": 39375.0,
+        "pop": 127076000
+      },
+      {
+        "country": "Mexico",
+        "actual": 5,
+        "expected": 15.6,
+        "rapi": -10.6,
+        "gdp_pc": 9098.0,
+        "pop": 122251351
+      },
+      {
+        "country": "Austria",
+        "actual": 1,
+        "expected": 10.13,
+        "rapi": -9.13,
+        "gdp_pc": 45061.0,
+        "pop": 8736668
+      },
+      {
+        "country": "Indonesia",
+        "actual": 3,
+        "expected": 11.83,
+        "rapi": -8.83,
+        "gdp_pc": 3521.0,
+        "pop": 264627418
+      },
+      {
+        "country": "United Arab Emirates",
+        "actual": 1,
+        "expected": 9.62,
+        "rapi": -8.62,
+        "gdp_pc": 42721.0,
+        "pop": 8935095
+      },
+      {
+        "country": "Switzerland",
+        "actual": 7,
+        "expected": 15.36,
+        "rapi": -8.36,
+        "gdp_pc": 82153.0,
+        "pop": 8373338
+      },
+      {
+        "country": "Ireland",
+        "actual": 2,
+        "expected": 8.79,
+        "rapi": -6.79,
+        "gdp_pc": 64130.0,
+        "pop": 4762722
+      },
+      {
+        "country": "Israel",
+        "actual": 2,
+        "expected": 8.28,
+        "rapi": -6.28,
+        "gdp_pc": 37672.0,
+        "pop": 8546000
+      },
+      {
+        "country": "Finland",
+        "actual": 1,
+        "expected": 7.22,
+        "rapi": -6.22,
+        "gdp_pc": 43451.0,
+        "pop": 5495303
+      },
+      {
+        "country": "Norway",
+        "actual": 4,
+        "expected": 10.19,
+        "rapi": -6.19,
+        "gdp_pc": 70867.0,
+        "pop": 5234519
+      },
+      {
+        "country": "Chile",
+        "actual": 0,
+        "expected": 5.89,
+        "rapi": -5.89,
+        "gdp_pc": 13650.0,
+        "pop": 18267221
+      },
+      {
+        "country": "Argentina",
+        "actual": 4,
+        "expected": 9.72,
+        "rapi": -5.72,
+        "gdp_pc": 12700.0,
+        "pop": 43900313
+      },
+      {
+        "country": "Nigeria",
+        "actual": 1,
+        "expected": 6.65,
+        "rapi": -5.65,
+        "gdp_pc": 2070.0,
+        "pop": 195443700
+      },
+      {
+        "country": "Belgium",
+        "actual": 6,
+        "expected": 11.05,
+        "rapi": -5.05,
+        "gdp_pc": 41855.0,
+        "pop": 11331422
+      },
+      {
+        "country": "Bangladesh",
+        "actual": 0,
+        "expected": 4.99,
+        "rapi": -4.99,
+        "gdp_pc": 1649.0,
+        "pop": 160811932
+      },
+      {
+        "country": "Philippines",
+        "actual": 1,
+        "expected": 5.98,
+        "rapi": -4.98,
+        "gdp_pc": 2985.0,
+        "pop": 106735719
+      },
+      {
+        "country": "Peru",
+        "actual": 0,
+        "expected": 4.87,
+        "rapi": -4.87,
+        "gdp_pc": 6217.0,
+        "pop": 30866494
+      },
+      {
+        "country": "Portugal",
+        "actual": 1,
+        "expected": 5.75,
+        "rapi": -4.75,
+        "gdp_pc": 19980.0,
+        "pop": 10325452
+      },
+      {
+        "country": "Pakistan",
+        "actual": 0,
+        "expected": 4.58,
+        "rapi": -4.58,
+        "gdp_pc": 1425.0,
+        "pop": 220138869
+      },
+      {
+        "country": "Iraq",
+        "actual": 0,
+        "expected": 3.99,
+        "rapi": -3.99,
+        "gdp_pc": 4334.0,
+        "pop": 38469627
+      },
+      {
+        "country": "Qatar",
+        "actual": 1,
+        "expected": 4.68,
+        "rapi": -3.68,
+        "gdp_pc": 61254.0,
+        "pop": 2477113
+      },
+      {
+        "country": "Brazil",
+        "actual": 19,
+        "expected": 22.68,
+        "rapi": -3.68,
+        "gdp_pc": 8836.0,
+        "pop": 203218114
+      },
+      {
+        "country": "Luxembourg",
+        "actual": 0,
+        "expected": 3.39,
+        "rapi": -3.39,
+        "gdp_pc": 106899.0,
+        "pop": 582014
+      },
+      {
+        "country": "Egypt",
+        "actual": 3,
+        "expected": 6.22,
+        "rapi": -3.22,
+        "gdp_pc": 3271.0,
+        "pop": 101644589
+      },
+      {
+        "country": "Oman",
+        "actual": 0,
+        "expected": 2.96,
+        "rapi": -2.96,
+        "gdp_pc": 17110.0,
+        "pop": 4390877
+      },
+      {
+        "country": "Ecuador",
+        "actual": 0,
+        "expected": 2.95,
+        "rapi": -2.95,
+        "gdp_pc": 5918.0,
+        "pop": 16505139
+      },
+      {
+        "country": "Vietnam",
+        "actual": 2,
+        "expected": 4.52,
+        "rapi": -2.52,
+        "gdp_pc": 2735.0,
+        "pop": 94000117
+      },
+      {
+        "country": "Sri Lanka",
+        "actual": 0,
+        "expected": 2.45,
+        "rapi": -2.45,
+        "gdp_pc": 4149.0,
+        "pop": 21209000
+      },
+      {
+        "country": "Costa Rica",
+        "actual": 0,
+        "expected": 2.41,
+        "rapi": -2.41,
+        "gdp_pc": 12091.0,
+        "pop": 4866998
+      },
+      {
+        "country": "Panama",
+        "actual": 0,
+        "expected": 2.24,
+        "rapi": -2.24,
+        "gdp_pc": 14832.0,
+        "pop": 4029086
+      },
+      {
+        "country": "Algeria",
+        "actual": 2,
+        "expected": 4.21,
+        "rapi": -2.21,
+        "gdp_pc": 4425.0,
+        "pop": 40850721
+      },
+      {
+        "country": "Uruguay",
+        "actual": 0,
+        "expected": 2.21,
+        "rapi": -2.21,
+        "gdp_pc": 17010.0,
+        "pop": 3379283
+      },
+      {
+        "country": "Guatemala",
+        "actual": 0,
+        "expected": 2.16,
+        "rapi": -2.16,
+        "gdp_pc": 4060.0,
+        "pop": 16268760
+      },
+      {
+        "country": "Lebanon",
+        "actual": 0,
+        "expected": 1.95,
+        "rapi": -1.95,
+        "gdp_pc": 8089.0,
+        "pop": 6323060
+      },
+      {
+        "country": "Angola",
+        "actual": 0,
+        "expected": 1.9,
+        "rapi": -1.9,
+        "gdp_pc": 2052.0,
+        "pop": 29183070
+      },
+      {
+        "country": "Libya",
+        "actual": 0,
+        "expected": 1.9,
+        "rapi": -1.9,
+        "gdp_pc": 7526.0,
+        "pop": 6632126
+      },
+      {
+        "country": "Ghana",
+        "actual": 0,
+        "expected": 1.83,
+        "rapi": -1.83,
+        "gdp_pc": 1912.0,
+        "pop": 29356742
+      },
+      {
+        "country": "Cyprus",
+        "actual": 0,
+        "expected": 1.72,
+        "rapi": -1.72,
+        "gdp_pc": 24280.0,
+        "pop": 1237112
+      },
+      {
+        "country": "Morocco",
+        "actual": 1,
+        "expected": 2.69,
+        "rapi": -1.69,
+        "gdp_pc": 3141.0,
+        "pop": 35023457
+      },
+      {
+        "country": "Myanmar",
+        "actual": 0,
+        "expected": 1.61,
+        "rapi": -1.61,
+        "gdp_pc": 1229.0,
+        "pop": 51495696
+      },
+      {
+        "country": "Turkmenistan",
+        "actual": 0,
+        "expected": 1.6,
+        "rapi": -1.6,
+        "gdp_pc": 5687.0,
+        "pop": 6360041
+      },
+      {
+        "country": "Iceland",
+        "actual": 0,
+        "expected": 1.55,
+        "rapi": -1.55,
+        "gdp_pc": 62854.0,
+        "pop": 335439
+      },
+      {
+        "country": "Paraguay",
+        "actual": 0,
+        "expected": 1.54,
+        "rapi": -1.54,
+        "gdp_pc": 5775.0,
+        "pop": 6249126
+      },
+      {
+        "country": "Tanzania",
+        "actual": 0,
+        "expected": 1.48,
+        "rapi": -1.48,
+        "gdp_pc": 953.0,
+        "pop": 53824013
+      },
+      {
+        "country": "Dominican Republic",
+        "actual": 1,
+        "expected": 2.46,
+        "rapi": -1.46,
+        "gdp_pc": 7160.0,
+        "pop": 10551430
+      },
+      {
+        "country": "Sudan",
+        "actual": 0,
+        "expected": 1.32,
+        "rapi": -1.32,
+        "gdp_pc": 1033.0,
+        "pop": 41259892
+      },
+      {
+        "country": "Latvia",
+        "actual": 0,
+        "expected": 1.32,
+        "rapi": -1.32,
+        "gdp_pc": 13839.0,
+        "pop": 1959537
+      },
+      {
+        "country": "Cameroon",
+        "actual": 0,
+        "expected": 1.26,
+        "rapi": -1.26,
+        "gdp_pc": 1442.0,
+        "pop": 23454161
+      },
+      {
+        "country": "Boliva",
+        "actual": 0,
+        "expected": 1.26,
+        "rapi": -1.26,
+        "gdp_pc": 3036.0,
+        "pop": 11180020
+      },
+      {
+        "country": "Democratic Republic of the Congo",
+        "actual": 0,
+        "expected": 1.25,
+        "rapi": -1.25,
+        "gdp_pc": 460.0,
+        "pop": 83956415
+      },
+      {
+        "country": "Malaysia",
+        "actual": 5,
+        "expected": 6.23,
+        "rapi": -1.23,
+        "gdp_pc": 9477.0,
+        "pop": 31789685
+      },
+      {
+        "country": "El Salvador",
+        "actual": 0,
+        "expected": 1.12,
+        "rapi": -1.12,
+        "gdp_pc": 3901.0,
+        "pop": 6200800
+      },
+      {
+        "country": "Cambodia",
+        "actual": 0,
+        "expected": 1.09,
+        "rapi": -1.09,
+        "gdp_pc": 1675.0,
+        "pop": 15852803
+      },
+      {
+        "country": "Uganda",
+        "actual": 0,
+        "expected": 1.09,
+        "rapi": -1.09,
+        "gdp_pc": 753.0,
+        "pop": 38799152
+      },
+      {
+        "country": "South Korea",
+        "actual": 21,
+        "expected": 22.08,
+        "rapi": -1.08,
+        "gdp_pc": 30832.0,
+        "pop": 51217803
+      },
+      {
+        "country": "Romania",
+        "actual": 4,
+        "expected": 5.01,
+        "rapi": -1.01,
+        "gdp_pc": 9405.0,
+        "pop": 19702267
+      },
+      {
+        "country": "Thailand",
+        "actual": 6,
+        "expected": 7.0,
+        "rapi": -1.0,
+        "gdp_pc": 5834.0,
+        "pop": 70859841
+      },
+      {
+        "country": "Sweden",
+        "actual": 11,
+        "expected": 11.94,
+        "rapi": -0.94,
+        "gdp_pc": 51704.0,
+        "pop": 9923085
+      },
+      {
+        "country": "Jordan",
+        "actual": 1,
+        "expected": 1.62,
+        "rapi": -0.62,
+        "gdp_pc": 3987.0,
+        "pop": 10006367
+      },
+      {
+        "country": "Spain",
+        "actual": 17,
+        "expected": 17.53,
+        "rapi": -0.53,
+        "gdp_pc": 26756.0,
+        "pop": 46458139
+      },
+      {
+        "country": "Iran",
+        "actual": 8,
+        "expected": 8.49,
+        "rapi": -0.49,
+        "gdp_pc": 5711.0,
+        "pop": 83812228
+      },
+      {
+        "country": "Estonia",
+        "actual": 1,
+        "expected": 1.43,
+        "rapi": -0.43,
+        "gdp_pc": 18666.0,
+        "pop": 1315790
+      },
+      {
+        "country": "Venezuela",
+        "actual": 3,
+        "expected": 3.19,
+        "rapi": -0.19,
+        "gdp_pc": 3670.0,
+        "pop": 30765720
+      }
+    ],
+    "peers": [
+      {
+        "under": "Jordan",
+        "under_rapi": -0.62,
+        "peer": "Azerbaijan",
+        "peer_rapi": 16.51,
+        "peer_actual": 18,
+        "distance": 0.037
+      },
+      {
+        "under": "Libya",
+        "under_rapi": -1.9,
+        "peer": "Bulgaria",
+        "peer_rapi": 0.84,
+        "peer_actual": 3,
+        "distance": 0.055
+      },
+      {
+        "under": "Portugal",
+        "under_rapi": -4.75,
+        "peer": "Czech Republic",
+        "peer_rapi": 4.37,
+        "peer_actual": 10,
+        "distance": 0.067
+      },
+      {
+        "under": "Lebanon",
+        "under_rapi": -1.95,
+        "peer": "Bulgaria",
+        "peer_rapi": 0.84,
+        "peer_actual": 3,
+        "distance": 0.093
+      },
+      {
+        "under": "Turkmenistan",
+        "under_rapi": -1.6,
+        "peer": "Serbia",
+        "peer_rapi": 6.22,
+        "peer_actual": 8,
+        "distance": 0.116
+      },
+      {
+        "under": "Ghana",
+        "under_rapi": -1.83,
+        "peer": "Ivory Coast",
+        "peer_rapi": 0.34,
+        "peer_actual": 2,
+        "distance": 0.125
+      },
+      {
+        "under": "Paraguay",
+        "under_rapi": -1.54,
+        "peer": "Serbia",
+        "peer_rapi": 6.22,
+        "peer_actual": 8,
+        "distance": 0.127
+      },
+      {
+        "under": "Dominican Republic",
+        "under_rapi": -1.46,
+        "peer": "Cuba",
+        "peer_rapi": 8.17,
+        "peer_actual": 11,
+        "distance": 0.141
+      },
+      {
+        "under": "Cyprus",
+        "under_rapi": -1.72,
+        "peer": "Bahrain",
+        "peer_rapi": 0.15,
+        "peer_actual": 2,
+        "distance": 0.142
+      },
+      {
+        "under": "Argentina",
+        "under_rapi": -5.72,
+        "peer": "Poland",
+        "peer_rapi": 1.64,
+        "peer_actual": 11,
+        "distance": 0.146
+      },
+      {
+        "under": "Panama",
+        "under_rapi": -2.24,
+        "peer": "Croatia",
+        "peer_rapi": 7.96,
+        "peer_actual": 10,
+        "distance": 0.147
+      },
+      {
+        "under": "Angola",
+        "under_rapi": -1.9,
+        "peer": "Ivory Coast",
+        "peer_rapi": 0.34,
+        "peer_actual": 2,
+        "distance": 0.151
+      },
+      {
+        "under": "South Korea",
+        "under_rapi": -1.08,
+        "peer": "Italy",
+        "peer_rapi": 2.07,
+        "peer_actual": 28,
+        "distance": 0.161
+      },
+      {
+        "under": "Morocco",
+        "under_rapi": -1.69,
+        "peer": "Uzbekistan",
+        "peer_rapi": 10.58,
+        "peer_actual": 13,
+        "distance": 0.173
+      },
+      {
+        "under": "Finland",
+        "under_rapi": -6.22,
+        "peer": "New Zealand",
+        "peer_rapi": 11.97,
+        "peer_actual": 18,
+        "distance": 0.173
+      },
+      {
+        "under": "Mexico",
+        "under_rapi": -10.6,
+        "peer": "Russia",
+        "peer_rapi": 40.74,
+        "peer_actual": 56,
+        "distance": 0.178
+      },
+      {
+        "under": "Costa Rica",
+        "under_rapi": -2.41,
+        "peer": "Croatia",
+        "peer_rapi": 7.96,
+        "peer_actual": 10,
+        "distance": 0.18
+      },
+      {
+        "under": "Uruguay",
+        "under_rapi": -2.21,
+        "peer": "Lithuania",
+        "peer_rapi": 2.19,
+        "peer_actual": 4,
+        "distance": 0.207
+      },
+      {
+        "under": "Oman",
+        "under_rapi": -2.96,
+        "peer": "Slovakia",
+        "peer_rapi": 0.81,
+        "peer_actual": 4,
+        "distance": 0.214
+      },
+      {
+        "under": "Boliva",
+        "under_rapi": -1.26,
+        "peer": "Tunisia",
+        "peer_rapi": 1.44,
+        "peer_actual": 3,
+        "distance": 0.239
+      },
+      {
+        "under": "Romania",
+        "under_rapi": -1.01,
+        "peer": "Kazakhstan",
+        "peer_rapi": 14.38,
+        "peer_actual": 18,
+        "distance": 0.24
+      },
+      {
+        "under": "Myanmar",
+        "under_rapi": -1.61,
+        "peer": "Kenya",
+        "peer_rapi": 10.85,
+        "peer_actual": 13,
+        "distance": 0.244
+      },
+      {
+        "under": "Ireland",
+        "under_rapi": -6.79,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.246
+      },
+      {
+        "under": "Estonia",
+        "under_rapi": -0.43,
+        "peer": "Bahrain",
+        "peer_rapi": 0.15,
+        "peer_actual": 2,
+        "distance": 0.255
+      },
+      {
+        "under": "Ecuador",
+        "under_rapi": -2.95,
+        "peer": "Kazakhstan",
+        "peer_rapi": 14.38,
+        "peer_actual": 18,
+        "distance": 0.257
+      },
+      {
+        "under": "Cameroon",
+        "under_rapi": -1.26,
+        "peer": "Ivory Coast",
+        "peer_rapi": 0.34,
+        "peer_actual": 2,
+        "distance": 0.276
+      },
+      {
+        "under": "Norway",
+        "under_rapi": -6.19,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.278
+      },
+      {
+        "under": "Venezuela",
+        "under_rapi": -0.19,
+        "peer": "Uzbekistan",
+        "peer_rapi": 10.58,
+        "peer_actual": 13,
+        "distance": 0.288
+      },
+      {
+        "under": "Spain",
+        "under_rapi": -0.53,
+        "peer": "Italy",
+        "peer_rapi": 2.07,
+        "peer_actual": 28,
+        "distance": 0.303
+      },
+      {
+        "under": "Malaysia",
+        "under_rapi": -1.23,
+        "peer": "Poland",
+        "peer_rapi": 1.64,
+        "peer_actual": 11,
+        "distance": 0.327
+      },
+      {
+        "under": "Algeria",
+        "under_rapi": -2.21,
+        "peer": "Colombia",
+        "peer_rapi": 1.93,
+        "peer_actual": 8,
+        "distance": 0.333
+      },
+      {
+        "under": "Brazil",
+        "under_rapi": -3.68,
+        "peer": "Russia",
+        "peer_rapi": 40.74,
+        "peer_actual": 56,
+        "distance": 0.338
+      },
+      {
+        "under": "Guatemala",
+        "under_rapi": -2.16,
+        "peer": "Tunisia",
+        "peer_rapi": 1.44,
+        "peer_actual": 3,
+        "distance": 0.349
+      },
+      {
+        "under": "Iraq",
+        "under_rapi": -3.99,
+        "peer": "Colombia",
+        "peer_rapi": 1.93,
+        "peer_actual": 8,
+        "distance": 0.381
+      },
+      {
+        "under": "Latvia",
+        "under_rapi": -1.32,
+        "peer": "Lithuania",
+        "peer_rapi": 2.19,
+        "peer_actual": 4,
+        "distance": 0.392
+      },
+      {
+        "under": "Thailand",
+        "under_rapi": -1.0,
+        "peer": "Colombia",
+        "peer_rapi": 1.93,
+        "peer_actual": 8,
+        "distance": 0.402
+      },
+      {
+        "under": "Democratic Republic of the Congo",
+        "under_rapi": -1.25,
+        "peer": "Ethiopia",
+        "peer_rapi": 6.17,
+        "peer_actual": 8,
+        "distance": 0.411
+      },
+      {
+        "under": "Belgium",
+        "under_rapi": -5.05,
+        "peer": "Netherlands",
+        "peer_rapi": 3.26,
+        "peer_actual": 19,
+        "distance": 0.422
+      },
+      {
+        "under": "Peru",
+        "under_rapi": -4.87,
+        "peer": "Colombia",
+        "peer_rapi": 1.93,
+        "peer_actual": 8,
+        "distance": 0.432
+      },
+      {
+        "under": "Sudan",
+        "under_rapi": -1.32,
+        "peer": "Kenya",
+        "peer_rapi": 10.85,
+        "peer_actual": 13,
+        "distance": 0.436
+      },
+      {
+        "under": "Japan",
+        "under_rapi": -13.43,
+        "peer": "Germany",
+        "peer_rapi": 5.58,
+        "peer_actual": 42,
+        "distance": 0.442
+      },
+      {
+        "under": "El Salvador",
+        "under_rapi": -1.12,
+        "peer": "Serbia",
+        "peer_rapi": 6.22,
+        "peer_actual": 8,
+        "distance": 0.447
+      },
+      {
+        "under": "Austria",
+        "under_rapi": -9.13,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.463
+      },
+      {
+        "under": "Tanzania",
+        "under_rapi": -1.48,
+        "peer": "Kenya",
+        "peer_rapi": 10.85,
+        "peer_actual": 13,
+        "distance": 0.502
+      },
+      {
+        "under": "Cambodia",
+        "under_rapi": -1.09,
+        "peer": "Ivory Coast",
+        "peer_rapi": 0.34,
+        "peer_actual": 2,
+        "distance": 0.506
+      },
+      {
+        "under": "United Arab Emirates",
+        "under_rapi": -8.62,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.507
+      },
+      {
+        "under": "Israel",
+        "under_rapi": -6.28,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.544
+      },
+      {
+        "under": "Sweden",
+        "under_rapi": -0.94,
+        "peer": "Netherlands",
+        "peer_rapi": 3.26,
+        "peer_actual": 19,
+        "distance": 0.549
+      },
+      {
+        "under": "Switzerland",
+        "under_rapi": -8.36,
+        "peer": "Denmark",
+        "peer_rapi": 7.53,
+        "peer_actual": 15,
+        "distance": 0.559
+      },
+      {
+        "under": "Sri Lanka",
+        "under_rapi": -2.45,
+        "peer": "Uzbekistan",
+        "peer_rapi": 10.58,
+        "peer_actual": 13,
+        "distance": 0.565
+      },
+      {
+        "under": "Iran",
+        "under_rapi": -0.49,
+        "peer": "Colombia",
+        "peer_rapi": 1.93,
+        "peer_actual": 8,
+        "distance": 0.571
+      },
+      {
+        "under": "Chile",
+        "under_rapi": -5.89,
+        "peer": "Greece",
+        "peer_rapi": 1.05,
+        "peer_actual": 6,
+        "distance": 0.594
+      },
+      {
+        "under": "Saudi Arabia",
+        "under_rapi": -13.46,
+        "peer": "Poland",
+        "peer_rapi": 1.64,
+        "peer_actual": 11,
+        "distance": 0.615
+      },
+      {
+        "under": "Iceland",
+        "under_rapi": -1.55,
+        "peer": "Bahamas",
+        "peer_rapi": 1.07,
+        "peer_actual": 2,
+        "distance": 0.734
+      },
+      {
+        "under": "Uganda",
+        "under_rapi": -1.09,
+        "peer": "Niger",
+        "peer_rapi": 0.5,
+        "peer_actual": 1,
+        "distance": 0.747
+      },
+      {
+        "under": "Vietnam",
+        "under_rapi": -2.52,
+        "peer": "Ukraine",
+        "peer_rapi": 8.65,
+        "peer_actual": 11,
+        "distance": 0.761
+      },
+      {
+        "under": "Qatar",
+        "under_rapi": -3.68,
+        "peer": "New Zealand",
+        "peer_rapi": 11.97,
+        "peer_actual": 18,
+        "distance": 0.77
+      },
+      {
+        "under": "Egypt",
+        "under_rapi": -3.22,
+        "peer": "Ukraine",
+        "peer_rapi": 8.65,
+        "peer_actual": 11,
+        "distance": 0.903
+      },
+      {
+        "under": "Philippines",
+        "under_rapi": -4.98,
+        "peer": "Ukraine",
+        "peer_rapi": 8.65,
+        "peer_actual": 11,
+        "distance": 0.91
+      },
+      {
+        "under": "Bangladesh",
+        "under_rapi": -4.99,
+        "peer": "Ethiopia",
+        "peer_rapi": 6.17,
+        "peer_actual": 8,
+        "distance": 1.029
+      },
+      {
+        "under": "Pakistan",
+        "under_rapi": -4.58,
+        "peer": "Ethiopia",
+        "peer_rapi": 6.17,
+        "peer_actual": 8,
+        "distance": 1.077
+      },
+      {
+        "under": "Indonesia",
+        "under_rapi": -8.83,
+        "peer": "Russia",
+        "peer_rapi": 40.74,
+        "peer_actual": 56,
+        "distance": 1.083
+      },
+      {
+        "under": "Luxembourg",
+        "under_rapi": -3.39,
+        "peer": "Bahamas",
+        "peer_rapi": 1.07,
+        "peer_actual": 2,
+        "distance": 1.314
+      },
+      {
+        "under": "Nigeria",
+        "under_rapi": -5.65,
+        "peer": "Ethiopia",
+        "peer_rapi": 6.17,
+        "peer_actual": 8,
+        "distance": 1.318
+      },
+      {
+        "under": "USA",
+        "under_rapi": -16.86,
+        "peer": "Germany",
+        "peer_rapi": 5.58,
+        "peer_actual": 42,
+        "distance": 1.402
+      },
+      {
+        "under": "India",
+        "under_rapi": -19.65,
+        "peer": "China",
+        "peer_rapi": 0.37,
+        "peer_actual": 70,
+        "distance": 1.576
+      }
+    ],
+    "jordan_alts": [
+      {
+        "peer": "Azerbaijan",
+        "distance": 0.037,
+        "peer_rapi": 16.51,
+        "peer_actual": 18
+      },
+      {
+        "peer": "Tunisia",
+        "distance": 0.146,
+        "peer_rapi": 1.44,
+        "peer_actual": 3
+      },
+      {
+        "peer": "Belarus",
+        "distance": 0.241,
+        "peer_rapi": 7.13,
+        "peer_actual": 9
+      },
+      {
+        "peer": "Serbia",
+        "distance": 0.535,
+        "peer_rapi": 6.22,
+        "peer_actual": 8
+      },
+      {
+        "peer": "Cuba",
+        "distance": 0.72,
+        "peer_rapi": 8.17,
+        "peer_actual": 11
+      }
+    ]
+  },
+  "appendixC": {
+    "method": "KMeans (k=2) on concentration features [HHI, effective sports] over all-time Summer event-level medals",
+    "min_medals": 20,
+    "n_classified": 62,
+    "n_specialist": 22,
+    "n_generalist": 40,
+    "rows": [
+      {
+        "country": "South Africa",
+        "label": "Generalist",
+        "total_medals": 88,
+        "top_sport": "Athletics",
+        "top_share": 31.8,
+        "hhi": 0.205,
+        "eff_sports": 4.88
+      },
+      {
+        "country": "Estonia",
+        "label": "Generalist",
+        "total_medals": 34,
+        "top_sport": "Wrestling",
+        "top_share": 32.4,
+        "hhi": 0.199,
+        "eff_sports": 5.03
+      },
+      {
+        "country": "Australia",
+        "label": "Generalist",
+        "total_medals": 518,
+        "top_sport": "Swimming",
+        "top_share": 38.8,
+        "hhi": 0.196,
+        "eff_sports": 5.1
+      },
+      {
+        "country": "Cuba",
+        "label": "Generalist",
+        "total_medals": 214,
+        "top_sport": "Boxing",
+        "top_share": 34.1,
+        "hhi": 0.196,
+        "eff_sports": 5.11
+      },
+      {
+        "country": "North Korea",
+        "label": "Generalist",
+        "total_medals": 54,
+        "top_sport": "Weightlifting",
+        "top_share": 31.5,
+        "hhi": 0.189,
+        "eff_sports": 5.28
+      },
+      {
+        "country": "Slovenia",
+        "label": "Generalist",
+        "total_medals": 23,
+        "top_sport": "Judo",
+        "top_share": 21.7,
+        "hhi": 0.168,
+        "eff_sports": 5.94
+      },
+      {
+        "country": "USA",
+        "label": "Generalist",
+        "total_medals": 2544,
+        "top_sport": "Athletics",
+        "top_share": 32.1,
+        "hhi": 0.165,
+        "eff_sports": 6.07
+      },
+      {
+        "country": "Bulgaria",
+        "label": "Generalist",
+        "total_medals": 217,
+        "top_sport": "Wrestling",
+        "top_share": 31.8,
+        "hhi": 0.162,
+        "eff_sports": 6.17
+      },
+      {
+        "country": "Colombia",
+        "label": "Generalist",
+        "total_medals": 28,
+        "top_sport": "Cycling",
+        "top_share": 21.4,
+        "hhi": 0.153,
+        "eff_sports": 6.53
+      },
+      {
+        "country": "Argentina",
+        "label": "Generalist",
+        "total_medals": 74,
+        "top_sport": "Boxing",
+        "top_share": 32.4,
+        "hhi": 0.149,
+        "eff_sports": 6.73
+      },
+      {
+        "country": "Japan",
+        "label": "Generalist",
+        "total_medals": 437,
+        "top_sport": "Gymnastics",
+        "top_share": 21.5,
+        "hhi": 0.148,
+        "eff_sports": 6.74
+      },
+      {
+        "country": "New Zealand",
+        "label": "Generalist",
+        "total_medals": 118,
+        "top_sport": "Athletics",
+        "top_share": 20.3,
+        "hhi": 0.144,
+        "eff_sports": 6.94
+      },
+      {
+        "country": "Mexico",
+        "label": "Generalist",
+        "total_medals": 67,
+        "top_sport": "Diving",
+        "top_share": 20.9,
+        "hhi": 0.135,
+        "eff_sports": 7.4
+      },
+      {
+        "country": "Norway",
+        "label": "Generalist",
+        "total_medals": 155,
+        "top_sport": "Shooting",
+        "top_share": 21.3,
+        "hhi": 0.123,
+        "eff_sports": 8.13
+      },
+      {
+        "country": "Romania",
+        "label": "Generalist",
+        "total_medals": 303,
+        "top_sport": "Gymnastics",
+        "top_share": 22.8,
+        "hhi": 0.121,
+        "eff_sports": 8.28
+      },
+      {
+        "country": "Switzerland",
+        "label": "Generalist",
+        "total_medals": 209,
+        "top_sport": "Gymnastics",
+        "top_share": 23.0,
+        "hhi": 0.117,
+        "eff_sports": 8.55
+      },
+      {
+        "country": "Lithuania",
+        "label": "Generalist",
+        "total_medals": 25,
+        "top_sport": "Athletics",
+        "top_share": 20.0,
+        "hhi": 0.117,
+        "eff_sports": 8.56
+      },
+      {
+        "country": "Greece",
+        "label": "Generalist",
+        "total_medals": 151,
+        "top_sport": "Athletics",
+        "top_share": 23.8,
+        "hhi": 0.114,
+        "eff_sports": 8.77
+      },
+      {
+        "country": "Belarus",
+        "label": "Generalist",
+        "total_medals": 84,
+        "top_sport": "Athletics",
+        "top_share": 20.2,
+        "hhi": 0.112,
+        "eff_sports": 8.91
+      },
+      {
+        "country": "Hungary",
+        "label": "Generalist",
+        "total_medals": 504,
+        "top_sport": "Fencing",
+        "top_share": 17.5,
+        "hhi": 0.112,
+        "eff_sports": 8.96
+      },
+      {
+        "country": "Netherlands",
+        "label": "Generalist",
+        "total_medals": 297,
+        "top_sport": "Swimming",
+        "top_share": 19.9,
+        "hhi": 0.107,
+        "eff_sports": 9.39
+      },
+      {
+        "country": "Canada",
+        "label": "Generalist",
+        "total_medals": 305,
+        "top_sport": "Athletics",
+        "top_share": 20.3,
+        "hhi": 0.106,
+        "eff_sports": 9.45
+      },
+      {
+        "country": "Czech Republic",
+        "label": "Generalist",
+        "total_medals": 207,
+        "top_sport": "Athletics",
+        "top_share": 17.9,
+        "hhi": 0.105,
+        "eff_sports": 9.52
+      },
+      {
+        "country": "Brazil",
+        "label": "Generalist",
+        "total_medals": 128,
+        "top_sport": "Judo",
+        "top_share": 17.2,
+        "hhi": 0.104,
+        "eff_sports": 9.65
+      },
+      {
+        "country": "Poland",
+        "label": "Generalist",
+        "total_medals": 290,
+        "top_sport": "Athletics",
+        "top_share": 19.7,
+        "hhi": 0.102,
+        "eff_sports": 9.85
+      },
+      {
+        "country": "Sweden",
+        "label": "Generalist",
+        "total_medals": 513,
+        "top_sport": "Athletics",
+        "top_share": 17.9,
+        "hhi": 0.1,
+        "eff_sports": 9.98
+      },
+      {
+        "country": "UK",
+        "label": "Generalist",
+        "total_medals": 892,
+        "top_sport": "Athletics",
+        "top_share": 23.8,
+        "hhi": 0.099,
+        "eff_sports": 10.08
+      },
+      {
+        "country": "Croatia",
+        "label": "Generalist",
+        "total_medals": 33,
+        "top_sport": "Athletics",
+        "top_share": 15.2,
+        "hhi": 0.098,
+        "eff_sports": 10.18
+      },
+      {
+        "country": "South Korea",
+        "label": "Generalist",
+        "total_medals": 263,
+        "top_sport": "Judo",
+        "top_share": 16.3,
+        "hhi": 0.098,
+        "eff_sports": 10.22
+      },
+      {
+        "country": "Russia",
+        "label": "Generalist",
+        "total_medals": 1577,
+        "top_sport": "Athletics",
+        "top_share": 18.5,
+        "hhi": 0.094,
+        "eff_sports": 10.68
+      },
+      {
+        "country": "Italy",
+        "label": "Generalist",
+        "total_medals": 608,
+        "top_sport": "Fencing",
+        "top_share": 20.9,
+        "hhi": 0.091,
+        "eff_sports": 11.01
+      },
+      {
+        "country": "Germany",
+        "label": "Generalist",
+        "total_medals": 1389,
+        "top_sport": "Athletics",
+        "top_share": 19.0,
+        "hhi": 0.089,
+        "eff_sports": 11.22
+      },
+      {
+        "country": "Serbia",
+        "label": "Generalist",
+        "total_medals": 107,
+        "top_sport": "Wrestling",
+        "top_share": 15.9,
+        "hhi": 0.088,
+        "eff_sports": 11.37
+      },
+      {
+        "country": "Belgium",
+        "label": "Generalist",
+        "total_medals": 166,
+        "top_sport": "Cycling",
+        "top_share": 16.3,
+        "hhi": 0.082,
+        "eff_sports": 12.23
+      },
+      {
+        "country": "Austria",
+        "label": "Generalist",
+        "total_medals": 108,
+        "top_sport": "Canoeing",
+        "top_share": 13.0,
+        "hhi": 0.08,
+        "eff_sports": 12.43
+      },
+      {
+        "country": "Ukraine",
+        "label": "Generalist",
+        "total_medals": 126,
+        "top_sport": "Athletics",
+        "top_share": 14.3,
+        "hhi": 0.08,
+        "eff_sports": 12.48
+      },
+      {
+        "country": "Denmark",
+        "label": "Generalist",
+        "total_medals": 210,
+        "top_sport": "Sailing",
+        "top_share": 14.3,
+        "hhi": 0.08,
+        "eff_sports": 12.49
+      },
+      {
+        "country": "China",
+        "label": "Generalist",
+        "total_medals": 545,
+        "top_sport": "Diving",
+        "top_share": 12.7,
+        "hhi": 0.079,
+        "eff_sports": 12.66
+      },
+      {
+        "country": "France",
+        "label": "Generalist",
+        "total_medals": 770,
+        "top_sport": "Fencing",
+        "top_share": 16.0,
+        "hhi": 0.076,
+        "eff_sports": 13.13
+      },
+      {
+        "country": "Spain",
+        "label": "Generalist",
+        "total_medals": 148,
+        "top_sport": "Sailing",
+        "top_share": 12.8,
+        "hhi": 0.068,
+        "eff_sports": 14.66
+      },
+      {
+        "country": "Ethiopia",
+        "label": "Specialist",
+        "total_medals": 53,
+        "top_sport": "Athletics",
+        "top_share": 100.0,
+        "hhi": 1.0,
+        "eff_sports": 1.0
+      },
+      {
+        "country": "Jamaica",
+        "label": "Specialist",
+        "total_medals": 76,
+        "top_sport": "Athletics",
+        "top_share": 98.7,
+        "hhi": 0.974,
+        "eff_sports": 1.03
+      },
+      {
+        "country": "Kenya",
+        "label": "Specialist",
+        "total_medals": 100,
+        "top_sport": "Athletics",
+        "top_share": 93.0,
+        "hhi": 0.87,
+        "eff_sports": 1.15
+      },
+      {
+        "country": "Morocco",
+        "label": "Specialist",
+        "total_medals": 23,
+        "top_sport": "Athletics",
+        "top_share": 82.6,
+        "hhi": 0.713,
+        "eff_sports": 1.4
+      },
+      {
+        "country": "Trinidad",
+        "label": "Specialist",
+        "total_medals": 21,
+        "top_sport": "Athletics",
+        "top_share": 81.0,
+        "hhi": 0.678,
+        "eff_sports": 1.47
+      },
+      {
+        "country": "Indonesia",
+        "label": "Specialist",
+        "total_medals": 30,
+        "top_sport": "Badminton",
+        "top_share": 63.3,
+        "hhi": 0.513,
+        "eff_sports": 1.95
+      },
+      {
+        "country": "Iran",
+        "label": "Specialist",
+        "total_medals": 68,
+        "top_sport": "Wrestling",
+        "top_share": 63.2,
+        "hhi": 0.478,
+        "eff_sports": 2.09
+      },
+      {
+        "country": "Turkey",
+        "label": "Specialist",
+        "total_medals": 95,
+        "top_sport": "Wrestling",
+        "top_share": 66.3,
+        "hhi": 0.468,
+        "eff_sports": 2.14
+      },
+      {
+        "country": "Slovakia",
+        "label": "Specialist",
+        "total_medals": 28,
+        "top_sport": "Canoeing",
+        "top_share": 64.3,
+        "hhi": 0.454,
+        "eff_sports": 2.2
+      },
+      {
+        "country": "Georgia",
+        "label": "Specialist",
+        "total_medals": 32,
+        "top_sport": "Wrestling",
+        "top_share": 56.2,
+        "hhi": 0.396,
+        "eff_sports": 2.52
+      },
+      {
+        "country": "Thailand",
+        "label": "Specialist",
+        "total_medals": 30,
+        "top_sport": "Boxing",
+        "top_share": 46.7,
+        "hhi": 0.38,
+        "eff_sports": 2.63
+      },
+      {
+        "country": "Nigeria",
+        "label": "Specialist",
+        "total_medals": 24,
+        "top_sport": "Athletics",
+        "top_share": 54.2,
+        "hhi": 0.375,
+        "eff_sports": 2.67
+      },
+      {
+        "country": "Azerbaijan",
+        "label": "Specialist",
+        "total_medals": 44,
+        "top_sport": "Wrestling",
+        "top_share": 52.3,
+        "hhi": 0.326,
+        "eff_sports": 3.06
+      },
+      {
+        "country": "Uzbekistan",
+        "label": "Specialist",
+        "total_medals": 33,
+        "top_sport": "Boxing",
+        "top_share": 42.4,
+        "hhi": 0.308,
+        "eff_sports": 3.25
+      },
+      {
+        "country": "Ireland",
+        "label": "Specialist",
+        "total_medals": 33,
+        "top_sport": "Boxing",
+        "top_share": 48.5,
+        "hhi": 0.297,
+        "eff_sports": 3.37
+      },
+      {
+        "country": "Mongolia",
+        "label": "Specialist",
+        "total_medals": 26,
+        "top_sport": "Wrestling",
+        "top_share": 34.6,
+        "hhi": 0.293,
+        "eff_sports": 3.41
+      },
+      {
+        "country": "Taiwan",
+        "label": "Specialist",
+        "total_medals": 24,
+        "top_sport": "Taekwondo",
+        "top_share": 33.3,
+        "hhi": 0.253,
+        "eff_sports": 3.95
+      },
+      {
+        "country": "Egypt",
+        "label": "Specialist",
+        "total_medals": 27,
+        "top_sport": "Weightlifting",
+        "top_share": 40.7,
+        "hhi": 0.246,
+        "eff_sports": 4.07
+      },
+      {
+        "country": "Portugal",
+        "label": "Specialist",
+        "total_medals": 24,
+        "top_sport": "Athletics",
+        "top_share": 41.7,
+        "hhi": 0.233,
+        "eff_sports": 4.3
+      },
+      {
+        "country": "Finland",
+        "label": "Specialist",
+        "total_medals": 310,
+        "top_sport": "Athletics",
+        "top_share": 37.4,
+        "hhi": 0.231,
+        "eff_sports": 4.32
+      },
+      {
+        "country": "India",
+        "label": "Specialist",
+        "total_medals": 28,
+        "top_sport": "Hockey",
+        "top_share": 39.3,
+        "hhi": 0.224,
+        "eff_sports": 4.45
+      },
+      {
+        "country": "Kazakhstan",
+        "label": "Specialist",
+        "total_medals": 70,
+        "top_sport": "Boxing",
+        "top_share": 31.4,
+        "hhi": 0.218,
+        "eff_sports": 4.58
+      }
+    ],
+    "pakistan_note": {
+      "total_medals": 10,
+      "top_sport": "Hockey",
+      "top_share": 80.0
+    },
+    "_sanity": {
+      "Pakistan": "EXCLUDED(<20)",
+      "India": "Specialist",
+      "Jamaica": "Specialist",
+      "Kenya": "Specialist",
+      "China": "Generalist",
+      "Germany": "Generalist",
+      "UK": "Generalist",
+      "USA": "Generalist",
+      "Ethiopia": "Specialist",
+      "Norway": "Generalist",
+      "Cuba": "Generalist",
+      "Hungary": "Generalist"
+    }
+  },
+  "appendixD": {
+    "min_medals": 100,
+    "scope": "All-time Summer Olympic medal-winning athletes (athlete-level), age recorded",
+    "rows": [
+      {
+        "sport": "Rhythmic Gymnastics",
+        "median": 18.0,
+        "q1": 17.0,
+        "q3": 20.2,
+        "iqr": 3.2,
+        "n": 132
+      },
+      {
+        "sport": "Swimming",
+        "median": 21.0,
+        "q1": 18.0,
+        "q3": 23.0,
+        "iqr": 5.0,
+        "n": 3027
+      },
+      {
+        "sport": "Diving",
+        "median": 22.0,
+        "q1": 19.0,
+        "q3": 25.0,
+        "iqr": 6.0,
+        "n": 423
+      },
+      {
+        "sport": "Taekwondo",
+        "median": 23.0,
+        "q1": 21.0,
+        "q3": 26.0,
+        "iqr": 5.0,
+        "n": 144
+      },
+      {
+        "sport": "Synchronized Swimming",
+        "median": 23.0,
+        "q1": 22.0,
+        "q3": 26.0,
+        "iqr": 4.0,
+        "n": 215
+      },
+      {
+        "sport": "Boxing",
+        "median": 23.0,
+        "q1": 21.0,
+        "q3": 25.0,
+        "iqr": 4.0,
+        "n": 931
+      },
+      {
+        "sport": "Football",
+        "median": 23.0,
+        "q1": 22.0,
+        "q3": 27.0,
+        "iqr": 5.0,
+        "n": 1531
+      },
+      {
+        "sport": "Gymnastics",
+        "median": 23.0,
+        "q1": 20.0,
+        "q3": 27.0,
+        "iqr": 7.0,
+        "n": 2187
+      },
+      {
+        "sport": "Athletics",
+        "median": 24.0,
+        "q1": 22.0,
+        "q3": 27.0,
+        "iqr": 5.0,
+        "n": 3945
+      },
+      {
+        "sport": "Cycling",
+        "median": 24.0,
+        "q1": 21.0,
+        "q3": 27.0,
+        "iqr": 6.0,
+        "n": 1235
+      },
+      {
+        "sport": "Table Tennis",
+        "median": 24.0,
+        "q1": 22.0,
+        "q3": 27.0,
+        "iqr": 5.0,
+        "n": 168
+      },
+      {
+        "sport": "Rowing",
+        "median": 25.0,
+        "q1": 22.0,
+        "q3": 28.0,
+        "iqr": 6.0,
+        "n": 2830
+      },
+      {
+        "sport": "Weightlifting",
+        "median": 25.0,
+        "q1": 22.0,
+        "q3": 28.0,
+        "iqr": 6.0,
+        "n": 636
+      },
+      {
+        "sport": "Hockey",
+        "median": 25.0,
+        "q1": 23.0,
+        "q3": 28.0,
+        "iqr": 5.0,
+        "n": 1497
+      },
+      {
+        "sport": "Judo",
+        "median": 25.0,
+        "q1": 23.0,
+        "q3": 27.0,
+        "iqr": 4.0,
+        "n": 547
+      },
+      {
+        "sport": "Volleyball",
+        "median": 25.0,
+        "q1": 23.0,
+        "q3": 28.0,
+        "iqr": 5.0,
+        "n": 969
+      },
+      {
+        "sport": "Basketball",
+        "median": 25.0,
+        "q1": 22.0,
+        "q3": 28.0,
+        "iqr": 6.0,
+        "n": 1078
+      },
+      {
+        "sport": "Water Polo",
+        "median": 25.0,
+        "q1": 23.0,
+        "q3": 29.0,
+        "iqr": 6.0,
+        "n": 1030
+      },
+      {
+        "sport": "Badminton",
+        "median": 25.0,
+        "q1": 23.0,
+        "q3": 27.2,
+        "iqr": 4.2,
+        "n": 168
+      },
+      {
+        "sport": "Tennis",
+        "median": 26.0,
+        "q1": 23.0,
+        "q3": 30.0,
+        "iqr": 7.0,
+        "n": 328
+      },
+      {
+        "sport": "Softball",
+        "median": 26.0,
+        "q1": 24.0,
+        "q3": 29.0,
+        "iqr": 5.0,
+        "n": 179
+      },
+      {
+        "sport": "Wrestling",
+        "median": 26.0,
+        "q1": 23.0,
+        "q3": 28.0,
+        "iqr": 5.0,
+        "n": 1265
+      },
+      {
+        "sport": "Handball",
+        "median": 26.0,
+        "q1": 23.0,
+        "q3": 29.0,
+        "iqr": 6.0,
+        "n": 1060
+      },
+      {
+        "sport": "Canoeing",
+        "median": 26.0,
+        "q1": 23.0,
+        "q3": 29.0,
+        "iqr": 6.0,
+        "n": 1165
+      },
+      {
+        "sport": "Baseball",
+        "median": 26.0,
+        "q1": 23.0,
+        "q3": 29.0,
+        "iqr": 6.0,
+        "n": 336
+      },
+      {
+        "sport": "Modern Pentathlon",
+        "median": 27.0,
+        "q1": 25.0,
+        "q3": 29.0,
+        "iqr": 4.0,
+        "n": 186
+      },
+      {
+        "sport": "Archery",
+        "median": 27.0,
+        "q1": 22.0,
+        "q3": 38.0,
+        "iqr": 16.0,
+        "n": 319
+      },
+      {
+        "sport": "Fencing",
+        "median": 28.0,
+        "q1": 24.0,
+        "q3": 32.0,
+        "iqr": 8.0,
+        "n": 1720
+      },
+      {
+        "sport": "Sailing",
+        "median": 30.0,
+        "q1": 26.0,
+        "q3": 36.0,
+        "iqr": 10.0,
+        "n": 1175
+      },
+      {
+        "sport": "Shooting",
+        "median": 32.0,
+        "q1": 27.0,
+        "q3": 39.0,
+        "iqr": 12.0,
+        "n": 1167
+      },
+      {
+        "sport": "Equestrianism",
+        "median": 34.0,
+        "q1": 29.0,
+        "q3": 41.0,
+        "iqr": 12.0,
+        "n": 955
+      }
+    ]
+  },
+  "appendixE": {
+    "comparables": {
+      "Hockey (field)": 390,
+      "Rugby Sevens": 299,
+      "Basketball": 281,
+      "Table Tennis": 172,
+      "Badminton": 172,
+      "Tennis": 196,
+      "Baseball (Beijing 2008)": 191,
+      "Softball (Beijing 2008)": 120
+    }
+  }
+}
