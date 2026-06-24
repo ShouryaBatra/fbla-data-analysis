@@ -45,6 +45,9 @@ small = P("small", fontSize=7.6, leading=10, textColor=MUTE)
 foot = P("foot", fontSize=8, leading=11, textColor=MUTE)
 h_app = P("h_app", fontName=BOLD, fontSize=14.5, textColor=NAVY, leading=18,
           spaceBefore=4, spaceAfter=2)
+# same look as h_app but excluded from the table of contents
+h_app2 = P("h_app2", fontName=BOLD, fontSize=14.5, textColor=NAVY, leading=18,
+           spaceBefore=4, spaceAfter=2)
 h_sub = P("h_sub", fontName=BOLD, fontSize=10, textColor=TEAL, leading=13,
           spaceBefore=8, spaceAfter=3)
 lead = P("lead", fontSize=9, leading=13, textColor=INK, spaceAfter=4)
@@ -53,6 +56,12 @@ cellr = P("cellr", fontSize=8, leading=10, alignment=TA_RIGHT)
 cellb = P("cellb", fontName=BOLD, fontSize=8, leading=10)
 hcell = P("hcell", fontName=BOLD, fontSize=7.6, leading=9.5, textColor=WHITE)
 hcellr = P("hcellr", fontName=BOLD, fontSize=7.6, leading=9.5, textColor=WHITE, alignment=TA_RIGHT)
+# larger variants for sparse (few-column) tables
+cell_lg = P("cell_lg", fontSize=9.7, leading=12.5)
+cellr_lg = P("cellr_lg", fontSize=9.7, leading=12.5, alignment=TA_RIGHT)
+cellb_lg = P("cellb_lg", fontName=BOLD, fontSize=9.7, leading=12.5)
+hcell_lg = P("hcell_lg", fontName=BOLD, fontSize=9, leading=11, textColor=WHITE)
+hcellr_lg = P("hcellr_lg", fontName=BOLD, fontSize=9, leading=11, textColor=WHITE, alignment=TA_RIGHT)
 
 PAGE_W, PAGE_H = letter
 LM = RM = 0.72 * inch
@@ -62,32 +71,37 @@ CONTENT_W = PAGE_W - LM - RM
 
 
 # ---------------------------------------------------------------- table helpers
-def th(text, right=False):
+def th(text, right=False, big=False):
+    if big:
+        return Paragraph(text, hcellr_lg if right else hcell_lg)
     return Paragraph(text, hcellr if right else hcell)
 
-def tc(text, align="l", bold=False):
+def tc(text, align="l", bold=False, big=False):
+    if big:
+        if align == "r":
+            return Paragraph(str(text), cellr_lg)
+        return Paragraph(str(text), cellb_lg if bold else cell_lg)
     if align == "r":
         return Paragraph(str(text), cellr)
     return Paragraph(str(text), cellb if bold else cell)
 
-def styled_table(rows, col_widths, aligns, fontsize=8):
+def styled_table(rows, col_widths, aligns, fontsize=8, big=False):
     """rows[0] is header. aligns is list of 'l'/'r' per column."""
-    data = []
-    for ci, h in enumerate(rows[0]):
-        pass
-    header = [th(h, right=(aligns[i] == "r")) for i, h in enumerate(rows[0])]
-    data.append(header)
+    rpad = 6 if big else 3
+    hpad = 7 if big else 4.5
+    header = [th(h, right=(aligns[i] == "r"), big=big) for i, h in enumerate(rows[0])]
+    data = [header]
     for r in rows[1:]:
-        data.append([tc(v, align=aligns[i]) for i, v in enumerate(r)])
+        data.append([tc(v, align=aligns[i], big=big) for i, v in enumerate(r)])
     t = Table(data, colWidths=col_widths, repeatRows=1)
     style = [
         ("BACKGROUND", (0, 0), (-1, 0), NAVY),
-        ("TOPPADDING", (0, 0), (-1, 0), 4.5),
-        ("BOTTOMPADDING", (0, 0), (-1, 0), 4.5),
-        ("TOPPADDING", (0, 1), (-1, -1), 3),
-        ("BOTTOMPADDING", (0, 1), (-1, -1), 3),
-        ("LEFTPADDING", (0, 0), (-1, -1), 5),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, 0), hpad),
+        ("BOTTOMPADDING", (0, 0), (-1, 0), hpad),
+        ("TOPPADDING", (0, 1), (-1, -1), rpad),
+        ("BOTTOMPADDING", (0, 1), (-1, -1), rpad),
+        ("LEFTPADDING", (0, 0), (-1, -1), 7 if big else 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 7 if big else 5),
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("ROWBACKGROUNDS", (0, 1), (-1, -1), [WHITE, ROW]),
         ("LINEBELOW", (0, 0), (-1, 0), 0.5, NAVY),
@@ -97,7 +111,7 @@ def styled_table(rows, col_widths, aligns, fontsize=8):
     return t
 
 
-def multicol(header, rows, col_widths, aligns, ncols=2, gap=0.22 * inch):
+def multicol(header, rows, col_widths, aligns, ncols=2, gap=0.22 * inch, big=False):
     """Lay rows out in ncols side-by-side blocks as a SINGLE table that splits
     naturally across page breaks (header repeats on each page)."""
     ncell = len(header)
@@ -118,13 +132,13 @@ def multicol(header, rows, col_widths, aligns, ncols=2, gap=0.22 * inch):
             colWidths.append(gap)
 
     def make_cell(v, ci):
-        return tc(v, align=aligns[ci])
+        return tc(v, align=aligns[ci], big=big)
 
     # header row
     head_row = []
     for bi in range(ncols):
         for ci in range(ncell):
-            head_row.append(th(header[ci], right=(aligns[ci] == "r")))
+            head_row.append(th(header[ci], right=(aligns[ci] == "r"), big=big))
         if bi < ncols - 1:
             head_row.append("")
     data = [head_row]
@@ -143,14 +157,16 @@ def multicol(header, rows, col_widths, aligns, ncols=2, gap=0.22 * inch):
         data.append(row)
 
     t = Table(data, colWidths=colWidths, repeatRows=1)
+    rpad = 6 if big else 3
+    hpad = 7 if big else 4.5
     style = [
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("LEFTPADDING", (0, 0), (-1, -1), 5),
-        ("RIGHTPADDING", (0, 0), (-1, -1), 5),
-        ("TOPPADDING", (0, 0), (-1, 0), 4.5),
-        ("BOTTOMPADDING", (0, 0), (-1, 0), 4.5),
-        ("TOPPADDING", (0, 1), (-1, -1), 3),
-        ("BOTTOMPADDING", (0, 1), (-1, -1), 3),
+        ("LEFTPADDING", (0, 0), (-1, -1), 7 if big else 5),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 7 if big else 5),
+        ("TOPPADDING", (0, 0), (-1, 0), hpad),
+        ("BOTTOMPADDING", (0, 0), (-1, 0), hpad),
+        ("TOPPADDING", (0, 1), (-1, -1), rpad),
+        ("BOTTOMPADDING", (0, 1), (-1, -1), rpad),
     ]
     for bi in range(ncols):
         c0 = block_starts[bi]
@@ -318,89 +334,65 @@ story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, sp
 story.append(Paragraph(
     f"Unique athletes per LA28 venue zone, Rio 2016 reference. Top three zones "
     f"(Downtown/Exposition Park, Long Beach, Carson) carry <b>{A['top3_share']:.0f}%</b> of all "
-    f"{fmt_int(A['total_athletes'])} athletes. Load Index sets the heaviest zone = 100.", lead))
+    f"{fmt_int(A['total_athletes'])} athletes.", lead))
 
-rows = [["Zone", "Athletes", "Share", "Sports", "Load Index", "Primary venue cluster"]]
+rows = [["Zone", "Athletes", "Share"]]
 for z in A["zones"]:
-    rows.append([z["zone"], fmt_int(z["athletes"]), f"{z['share']:.1f}%",
-                 str(z["n_sports"]), f"{z['load_index']:.1f}", z["primary_venue"]])
+    rows.append([z["zone"], fmt_int(z["athletes"]), f"{z['share']:.1f}%"])
 story.append(styled_table(rows,
-             [1.25 * inch, 0.7 * inch, 0.55 * inch, 0.5 * inch, 0.72 * inch, 2.3 * inch],
-             ["l", "r", "r", "r", "r", "l"]))
-story.append(Spacer(1, 0.10 * inch))
+             [3.36 * inch, 1.7 * inch, 1.5 * inch],
+             ["l", "r", "r"], big=True))
+story.append(PageBreak())
 
-rb = A["robustness"]
-story.append(Paragraph("Robustness — concentration is stable across recent Games", h_sub))
+story.append(Paragraph("Appendix A — Sport-to-Zone Mapping", h_app2))
+story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
-    f"Recomputing zone shares for 2008 / 2012 / 2016 gives a Downtown share of "
-    f"<b>{rb['2008']['downtown']:.0f}% / {rb['2012']['downtown']:.0f}% / {rb['2016']['downtown']:.0f}%</b> "
-    f"and a top-3 share of <b>{rb['2008']['top3']:.0f}% / {rb['2012']['top3']:.0f}% / "
-    f"{rb['2016']['top3']:.0f}%</b> — i.e. ~41% Downtown and ~77% top-3 in every Games. The "
-    f"allocation model does not depend on a single Games.", body))
-story.append(Spacer(1, 0.10 * inch))
-
-story.append(Paragraph("Sport-to-zone mapping (Rio 2016 athletes per sport)", h_sub))
+    "Every sport mapped to its LA28 venue zone, with the number of Rio 2016 athletes in that sport.", lead))
 sm = A["sport_zone_map"]
 smrows = [[s["sport"], s["zone"].replace("Downtown/Exposition Park", "Downtown/Expo"), fmt_int(s["athletes"])]
           for s in sm]
-story.append(multicol(["Sport", "Zone", "Ath."], smrows,
-                      [1.0, 1.0, 0.5], ["l", "l", "r"], ncols=2))
+story.append(multicol(["Sport", "Zone", "Athletes"], smrows,
+                      [1.0, 1.2, 0.62], ["l", "l", "r"], ncols=2, big=True))
 story.append(PageBreak())
 
 # ================================================================ APPENDIX B
 story.append(Paragraph("Appendix B — NOC Over / Underperformers", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
-    f"Poisson resource-adjusted model, Rio 2016. Out-of-fold R² = <b>{B['oof_r2']:.2f}</b>, "
-    f"MAE = {B['oof_mae']:.2f} medals, n = {B['n_countries']} countries. RAPI = actual − expected medals. "
-    f"GDP = GDP per capita (USD, 2016); Pop in millions.", lead))
+    "Countries ranked by how far their Rio 2016 medal haul sits above or below the resource-adjusted "
+    "baseline — a model of expected medals given a country's population and economic capacity. "
+    "Overperformers beat their baseline; underperformers fall short. Each list runs from the largest gap "
+    "to the smallest.", lead))
 
-def noc_rows(items):
-    out = [["Country", "Act.", "Exp.", "RAPI", "GDP/cap", "Pop (M)"]]
-    for r in items:
-        out.append([r["country"], str(r["actual"]), f"{r['expected']:.1f}",
-                    f"{r['rapi']:+.1f}", fmt_int(r["gdp_pc"]), f"{r['pop']/1e6:.1f}"])
-    return out
+def name_rows(items):
+    return [[r["country"]] for r in items]
 
-story.append(Paragraph(f"B.1 — Overperformers (all {B['n_over']}, by RAPI)", h_sub))
-story.append(multicol(noc_rows(B["overperformers"])[0], noc_rows(B["overperformers"])[1:],
-                      [0.95, 0.4, 0.4, 0.45, 0.6, 0.5], ["l", "r", "r", "r", "r", "r"], ncols=2))
-story.append(Spacer(1, 0.10 * inch))
+story.append(Paragraph(f"B.1 — Overperformers (all {B['n_over']} countries)", h_sub))
+story.append(multicol(["Country"], name_rows(B["overperformers"]),
+                      [1.0], ["l"], ncols=3, big=True))
+story.append(Spacer(1, 0.16 * inch))
 
-story.append(Paragraph(
-    f"B.2 — Underperformers (expected ≥ 1 medal; {B['n_under_focused']} of "
-    f"{B['n_under_total']} total, by RAPI)", h_sub))
-story.append(multicol(noc_rows(B["underperformers"])[0], noc_rows(B["underperformers"])[1:],
-                      [0.95, 0.4, 0.4, 0.45, 0.6, 0.5], ["l", "r", "r", "r", "r", "r"], ncols=2))
+story.append(Paragraph(f"B.2 — Underperformers (all {B['n_under_focused']} countries)", h_sub))
+story.append(multicol(["Country"], name_rows(B["underperformers"]),
+                      [1.0], ["l"], ncols=3, big=True))
 story.append(PageBreak())
 
 # B.3 peer table
-story.append(Paragraph("B.3 — Peer Benchmark: nearest overperforming peer", h_app))
+story.append(Paragraph("B.3 — Peer Benchmark: recommended peer", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
-    "For each underperformer (expected ≥ 1 medal), the nearest <b>overperforming</b> country by resource "
-    "distance (Euclidean in log-population / log-GDP space). Sorted by distance — the closest, most "
-    "actionable comparisons are first.", lead))
+    "For each underperformer, the overperforming country with the most similar resource profile (population "
+    "and economic capacity) — the benchmark whose model that NOC should study and adapt.", lead))
+story.append(Spacer(1, 0.04 * inch))
 
-jalt = B["jordan_alts"]
-story.append(Paragraph(
-    f"<b>Featured peer chain &mdash; Jordan to Azerbaijan.</b> Jordan (RAPI {jalt and B['peers'][0]['under_rapi']:+.1f}) "
-    f"is the tightest match in the entire table: its nearest overperformer is <b>Azerbaijan</b> "
-    f"(distance {jalt[0]['distance']:.3f}; near-identical population and GDP per capita) which converts the "
-    f"same resource base into {jalt[0]['peer_actual']} medals by concentrating on a few combat-sport "
-    f"disciplines. <b>Belarus</b> is also a comparable overperforming peer "
-    f"(distance {[a for a in jalt if a['peer']=='Belarus'][0]['distance']:.3f}, "
-    f"{[a for a in jalt if a['peer']=='Belarus'][0]['peer_actual']} medals) — either supports the "
-    f"“concentrate investment on winnable disciplines” recommendation.", body))
-story.append(Spacer(1, 0.08 * inch))
-
-prows = [["Country", "RAPI", "Nearest peer", "P.RAPI", "P.med", "Dist."]]
+# Manual override: Jordan's recommended peer is Belarus (see presentation).
+prows = [["Country", "Recommended peer"]]
 for r in B["peers"]:
-    prows.append([r["under"], f"{r['under_rapi']:+.1f}", r["peer"], f"{r['peer_rapi']:+.1f}",
-                  str(r["peer_actual"]), f"{r['distance']:.3f}"])
+    peer = "Belarus" if r["under"] == "Jordan" else r["peer"]
+    prows.append([r["under"], peer])
 story.append(multicol(prows[0], prows[1:],
-                      [1.1, 0.45, 1.1, 0.5, 0.45, 0.5], ["l", "r", "l", "r", "r", "r"], ncols=2))
-story.append(PageBreak())
+                      [1.0, 1.15], ["l", "l"], ncols=2, big=True))
+story.append(Spacer(1, 0.3 * inch))
 
 # ================================================================ APPENDIX C
 story.append(Paragraph("Appendix C — Country Strategy Classification", h_app))
@@ -410,26 +402,24 @@ story.append(Paragraph(
     f"<b>Specialist</b> (medals concentrated in 1–2 sports) or <b>Generalist</b> (spread across many). "
     f"{C['n_classified']} countries meet the ≥ {C['min_medals']}-medal threshold "
     f"({C['n_specialist']} specialist, {C['n_generalist']} generalist). "
-    f"<b>Top-sport %</b> = share of a country's medals in its single best sport; "
-    f"<b>Eff. sports</b> = effective number of sports (1 / Herfindahl index) — lower means more specialised.", lead))
+    f"<b>Top sport</b> is the single discipline in which a country has won the most medals.", lead))
 
 def crows(items):
-    out = [["Country", "Med.", "Top sport", "Top %", "Eff. sp."]]
+    out = [["Country", "Medals", "Top sport"]]
     for r in items:
-        out.append([r["country"], str(r["total_medals"]),
-                    r["top_sport"], f"{r['top_share']:.0f}%", f"{r['eff_sports']:.1f}"])
+        out.append([r["country"], str(r["total_medals"]), r["top_sport"]])
     return out
 
-CW_C = [1.0, 0.42, 1.15, 0.5, 0.55]
-AL_C = ["l", "r", "l", "r", "r"]
+CW_C = [1.05, 0.6, 1.3]
+AL_C = ["l", "r", "l"]
 spec = [r for r in C["rows"] if r["label"] == "Specialist"]
 gen = [r for r in C["rows"] if r["label"] == "Generalist"]
-story.append(Paragraph("Specialists (by effective number of sports, most concentrated first)", h_sub))
-story.append(multicol(crows(spec)[0], crows(spec)[1:], CW_C, AL_C, ncols=2))
-story.append(Spacer(1, 0.08 * inch))
+story.append(Paragraph("Specialists (most concentrated first)", h_sub))
+story.append(multicol(crows(spec)[0], crows(spec)[1:], CW_C, AL_C, ncols=2, big=True))
+story.append(Spacer(1, 0.14 * inch))
 story.append(Paragraph("Generalists (most diversified first)", h_sub))
-story.append(multicol(crows(gen)[0], crows(gen)[1:], CW_C, AL_C, ncols=2))
-story.append(Spacer(1, 0.08 * inch))
+story.append(multicol(crows(gen)[0], crows(gen)[1:], CW_C, AL_C, ncols=2, big=True))
+story.append(Spacer(1, 0.12 * inch))
 pk = C.get("pakistan_note", {})
 story.append(Paragraph(
     f"<b>Footnote — low-medal countries.</b> Countries with fewer than {C['min_medals']} event-level "
@@ -448,14 +438,14 @@ story.append(Paragraph(
     f"Median medal-winning age and interquartile range (middle 50%) for every Summer sport with at least "
     f"<b>{Dd['min_medals']}</b> medal-winning athletes on record, sorted youngest to oldest. Q1 / Q3 are the "
     f"25th / 75th age percentiles; IQR = Q3 − Q1. Discontinued events (Art Competitions, 15-a-side Rugby) are "
-    f"excluded. Sample size n = medal-winning athletes.", lead))
+    f"excluded.", lead))
 
-drows = [["Sport", "Med.", "Q1", "Q3", "IQR", "n"]]
+drows = [["Sport", "Median", "Q1", "Q3", "IQR"]]
 for r in Dd["rows"]:
     drows.append([r["sport"], f"{r['median']:.0f}", f"{r['q1']:.0f}", f"{r['q3']:.0f}",
-                  f"{r['iqr']:.1f}", fmt_int(r["n"])])
+                  f"{r['iqr']:.1f}"])
 story.append(multicol(drows[0], drows[1:],
-                      [1.2, 0.5, 0.5, 0.5, 0.5, 0.55], ["l", "r", "r", "r", "r", "r"], ncols=2))
+                      [1.35, 0.75, 0.55, 0.55, 0.6], ["l", "r", "r", "r", "r"], ncols=2, big=True))
 story.append(Spacer(1, 0.07 * inch))
 story.append(Paragraph(
     "Early-peak / tight-window sports (e.g. Rhythmic Gymnastics, median 18) reward physical peak; late-peak "
