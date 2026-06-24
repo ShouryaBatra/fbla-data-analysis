@@ -1,0 +1,501 @@
+{
+  "description": "Data for the country strategy clusters scatter chart \u2014 each country labeled Specialist or Generalist by how concentrated its all-time Summer medals are. Suggested scatter: x = effective_sports (lower = more specialised), y = total_medals, color by cluster. top_sport_share_pct is the % of a country's medals in its single best sport.",
+  "data": [
+    {
+      "country": "South Africa",
+      "cluster": "Generalist",
+      "total_medals": 88,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 31.8,
+      "effective_sports": 4.88
+    },
+    {
+      "country": "Estonia",
+      "cluster": "Generalist",
+      "total_medals": 34,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 32.4,
+      "effective_sports": 5.03
+    },
+    {
+      "country": "Australia",
+      "cluster": "Generalist",
+      "total_medals": 518,
+      "top_sport": "Swimming",
+      "top_sport_share_pct": 38.8,
+      "effective_sports": 5.1
+    },
+    {
+      "country": "Cuba",
+      "cluster": "Generalist",
+      "total_medals": 214,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 34.1,
+      "effective_sports": 5.11
+    },
+    {
+      "country": "North Korea",
+      "cluster": "Generalist",
+      "total_medals": 54,
+      "top_sport": "Weightlifting",
+      "top_sport_share_pct": 31.5,
+      "effective_sports": 5.28
+    },
+    {
+      "country": "Slovenia",
+      "cluster": "Generalist",
+      "total_medals": 23,
+      "top_sport": "Judo",
+      "top_sport_share_pct": 21.7,
+      "effective_sports": 5.94
+    },
+    {
+      "country": "USA",
+      "cluster": "Generalist",
+      "total_medals": 2544,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 32.1,
+      "effective_sports": 6.07
+    },
+    {
+      "country": "Bulgaria",
+      "cluster": "Generalist",
+      "total_medals": 217,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 31.8,
+      "effective_sports": 6.17
+    },
+    {
+      "country": "Colombia",
+      "cluster": "Generalist",
+      "total_medals": 28,
+      "top_sport": "Cycling",
+      "top_sport_share_pct": 21.4,
+      "effective_sports": 6.53
+    },
+    {
+      "country": "Argentina",
+      "cluster": "Generalist",
+      "total_medals": 74,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 32.4,
+      "effective_sports": 6.73
+    },
+    {
+      "country": "Japan",
+      "cluster": "Generalist",
+      "total_medals": 437,
+      "top_sport": "Gymnastics",
+      "top_sport_share_pct": 21.5,
+      "effective_sports": 6.74
+    },
+    {
+      "country": "New Zealand",
+      "cluster": "Generalist",
+      "total_medals": 118,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 20.3,
+      "effective_sports": 6.94
+    },
+    {
+      "country": "Mexico",
+      "cluster": "Generalist",
+      "total_medals": 67,
+      "top_sport": "Diving",
+      "top_sport_share_pct": 20.9,
+      "effective_sports": 7.4
+    },
+    {
+      "country": "Norway",
+      "cluster": "Generalist",
+      "total_medals": 155,
+      "top_sport": "Shooting",
+      "top_sport_share_pct": 21.3,
+      "effective_sports": 8.13
+    },
+    {
+      "country": "Romania",
+      "cluster": "Generalist",
+      "total_medals": 303,
+      "top_sport": "Gymnastics",
+      "top_sport_share_pct": 22.8,
+      "effective_sports": 8.28
+    },
+    {
+      "country": "Switzerland",
+      "cluster": "Generalist",
+      "total_medals": 209,
+      "top_sport": "Gymnastics",
+      "top_sport_share_pct": 23.0,
+      "effective_sports": 8.55
+    },
+    {
+      "country": "Lithuania",
+      "cluster": "Generalist",
+      "total_medals": 25,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 20.0,
+      "effective_sports": 8.56
+    },
+    {
+      "country": "Greece",
+      "cluster": "Generalist",
+      "total_medals": 151,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 23.8,
+      "effective_sports": 8.77
+    },
+    {
+      "country": "Belarus",
+      "cluster": "Generalist",
+      "total_medals": 84,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 20.2,
+      "effective_sports": 8.91
+    },
+    {
+      "country": "Hungary",
+      "cluster": "Generalist",
+      "total_medals": 504,
+      "top_sport": "Fencing",
+      "top_sport_share_pct": 17.5,
+      "effective_sports": 8.96
+    },
+    {
+      "country": "Netherlands",
+      "cluster": "Generalist",
+      "total_medals": 297,
+      "top_sport": "Swimming",
+      "top_sport_share_pct": 19.9,
+      "effective_sports": 9.39
+    },
+    {
+      "country": "Canada",
+      "cluster": "Generalist",
+      "total_medals": 305,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 20.3,
+      "effective_sports": 9.45
+    },
+    {
+      "country": "Czech Republic",
+      "cluster": "Generalist",
+      "total_medals": 207,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 17.9,
+      "effective_sports": 9.52
+    },
+    {
+      "country": "Brazil",
+      "cluster": "Generalist",
+      "total_medals": 128,
+      "top_sport": "Judo",
+      "top_sport_share_pct": 17.2,
+      "effective_sports": 9.65
+    },
+    {
+      "country": "Poland",
+      "cluster": "Generalist",
+      "total_medals": 290,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 19.7,
+      "effective_sports": 9.85
+    },
+    {
+      "country": "Sweden",
+      "cluster": "Generalist",
+      "total_medals": 513,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 17.9,
+      "effective_sports": 9.98
+    },
+    {
+      "country": "UK",
+      "cluster": "Generalist",
+      "total_medals": 892,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 23.8,
+      "effective_sports": 10.08
+    },
+    {
+      "country": "Croatia",
+      "cluster": "Generalist",
+      "total_medals": 33,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 15.2,
+      "effective_sports": 10.18
+    },
+    {
+      "country": "South Korea",
+      "cluster": "Generalist",
+      "total_medals": 263,
+      "top_sport": "Judo",
+      "top_sport_share_pct": 16.3,
+      "effective_sports": 10.22
+    },
+    {
+      "country": "Russia",
+      "cluster": "Generalist",
+      "total_medals": 1577,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 18.5,
+      "effective_sports": 10.68
+    },
+    {
+      "country": "Italy",
+      "cluster": "Generalist",
+      "total_medals": 608,
+      "top_sport": "Fencing",
+      "top_sport_share_pct": 20.9,
+      "effective_sports": 11.01
+    },
+    {
+      "country": "Germany",
+      "cluster": "Generalist",
+      "total_medals": 1389,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 19.0,
+      "effective_sports": 11.22
+    },
+    {
+      "country": "Serbia",
+      "cluster": "Generalist",
+      "total_medals": 107,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 15.9,
+      "effective_sports": 11.37
+    },
+    {
+      "country": "Belgium",
+      "cluster": "Generalist",
+      "total_medals": 166,
+      "top_sport": "Cycling",
+      "top_sport_share_pct": 16.3,
+      "effective_sports": 12.23
+    },
+    {
+      "country": "Austria",
+      "cluster": "Generalist",
+      "total_medals": 108,
+      "top_sport": "Canoeing",
+      "top_sport_share_pct": 13.0,
+      "effective_sports": 12.43
+    },
+    {
+      "country": "Ukraine",
+      "cluster": "Generalist",
+      "total_medals": 126,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 14.3,
+      "effective_sports": 12.48
+    },
+    {
+      "country": "Denmark",
+      "cluster": "Generalist",
+      "total_medals": 210,
+      "top_sport": "Sailing",
+      "top_sport_share_pct": 14.3,
+      "effective_sports": 12.49
+    },
+    {
+      "country": "China",
+      "cluster": "Generalist",
+      "total_medals": 545,
+      "top_sport": "Diving",
+      "top_sport_share_pct": 12.7,
+      "effective_sports": 12.66
+    },
+    {
+      "country": "France",
+      "cluster": "Generalist",
+      "total_medals": 770,
+      "top_sport": "Fencing",
+      "top_sport_share_pct": 16.0,
+      "effective_sports": 13.13
+    },
+    {
+      "country": "Spain",
+      "cluster": "Generalist",
+      "total_medals": 148,
+      "top_sport": "Sailing",
+      "top_sport_share_pct": 12.8,
+      "effective_sports": 14.66
+    },
+    {
+      "country": "Ethiopia",
+      "cluster": "Specialist",
+      "total_medals": 53,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 100.0,
+      "effective_sports": 1.0
+    },
+    {
+      "country": "Jamaica",
+      "cluster": "Specialist",
+      "total_medals": 76,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 98.7,
+      "effective_sports": 1.03
+    },
+    {
+      "country": "Kenya",
+      "cluster": "Specialist",
+      "total_medals": 100,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 93.0,
+      "effective_sports": 1.15
+    },
+    {
+      "country": "Morocco",
+      "cluster": "Specialist",
+      "total_medals": 23,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 82.6,
+      "effective_sports": 1.4
+    },
+    {
+      "country": "Trinidad",
+      "cluster": "Specialist",
+      "total_medals": 21,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 81.0,
+      "effective_sports": 1.47
+    },
+    {
+      "country": "Indonesia",
+      "cluster": "Specialist",
+      "total_medals": 30,
+      "top_sport": "Badminton",
+      "top_sport_share_pct": 63.3,
+      "effective_sports": 1.95
+    },
+    {
+      "country": "Iran",
+      "cluster": "Specialist",
+      "total_medals": 68,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 63.2,
+      "effective_sports": 2.09
+    },
+    {
+      "country": "Turkey",
+      "cluster": "Specialist",
+      "total_medals": 95,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 66.3,
+      "effective_sports": 2.14
+    },
+    {
+      "country": "Slovakia",
+      "cluster": "Specialist",
+      "total_medals": 28,
+      "top_sport": "Canoeing",
+      "top_sport_share_pct": 64.3,
+      "effective_sports": 2.2
+    },
+    {
+      "country": "Georgia",
+      "cluster": "Specialist",
+      "total_medals": 32,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 56.2,
+      "effective_sports": 2.52
+    },
+    {
+      "country": "Thailand",
+      "cluster": "Specialist",
+      "total_medals": 30,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 46.7,
+      "effective_sports": 2.63
+    },
+    {
+      "country": "Nigeria",
+      "cluster": "Specialist",
+      "total_medals": 24,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 54.2,
+      "effective_sports": 2.67
+    },
+    {
+      "country": "Azerbaijan",
+      "cluster": "Specialist",
+      "total_medals": 44,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 52.3,
+      "effective_sports": 3.06
+    },
+    {
+      "country": "Uzbekistan",
+      "cluster": "Specialist",
+      "total_medals": 33,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 42.4,
+      "effective_sports": 3.25
+    },
+    {
+      "country": "Ireland",
+      "cluster": "Specialist",
+      "total_medals": 33,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 48.5,
+      "effective_sports": 3.37
+    },
+    {
+      "country": "Mongolia",
+      "cluster": "Specialist",
+      "total_medals": 26,
+      "top_sport": "Wrestling",
+      "top_sport_share_pct": 34.6,
+      "effective_sports": 3.41
+    },
+    {
+      "country": "Taiwan",
+      "cluster": "Specialist",
+      "total_medals": 24,
+      "top_sport": "Taekwondo",
+      "top_sport_share_pct": 33.3,
+      "effective_sports": 3.95
+    },
+    {
+      "country": "Egypt",
+      "cluster": "Specialist",
+      "total_medals": 27,
+      "top_sport": "Weightlifting",
+      "top_sport_share_pct": 40.7,
+      "effective_sports": 4.07
+    },
+    {
+      "country": "Portugal",
+      "cluster": "Specialist",
+      "total_medals": 24,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 41.7,
+      "effective_sports": 4.3
+    },
+    {
+      "country": "Finland",
+      "cluster": "Specialist",
+      "total_medals": 310,
+      "top_sport": "Athletics",
+      "top_sport_share_pct": 37.4,
+      "effective_sports": 4.32
+    },
+    {
+      "country": "India",
+      "cluster": "Specialist",
+      "total_medals": 28,
+      "top_sport": "Hockey",
+      "top_sport_share_pct": 39.3,
+      "effective_sports": 4.45
+    },
+    {
+      "country": "Kazakhstan",
+      "cluster": "Specialist",
+      "total_medals": 70,
+      "top_sport": "Boxing",
+      "top_sport_share_pct": 31.4,
+      "effective_sports": 4.58
+    }
+  ]
+}

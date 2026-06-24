@@ -1,0 +1,1279 @@
+{
+  "description": "Data for the resource-adjusted medal performance scatter chart \u2014 actual vs expected (model-predicted) Rio 2016 medals for every participating country. Plot x = expected_medals, y = actual_medals, with a y = x parity line; color by category. Points above the line (Over baseline) beat their resource baseline; points below (Under baseline) fall short. rapi = actual - expected.",
+  "data": [
+    {
+      "country": "Russia",
+      "expected_medals": 15.26,
+      "actual_medals": 56,
+      "rapi": 40.74,
+      "category": "Over baseline"
+    },
+    {
+      "country": "UK",
+      "expected_medals": 30.42,
+      "actual_medals": 67,
+      "rapi": 36.58,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Azerbaijan",
+      "expected_medals": 1.49,
+      "actual_medals": 18,
+      "rapi": 16.51,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Kazakhstan",
+      "expected_medals": 3.62,
+      "actual_medals": 18,
+      "rapi": 14.38,
+      "category": "Over baseline"
+    },
+    {
+      "country": "New Zealand",
+      "expected_medals": 6.03,
+      "actual_medals": 18,
+      "rapi": 11.97,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Hungary",
+      "expected_medals": 3.7,
+      "actual_medals": 15,
+      "rapi": 11.3,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Kenya",
+      "expected_medals": 2.15,
+      "actual_medals": 13,
+      "rapi": 10.85,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Uzbekistan",
+      "expected_medals": 2.42,
+      "actual_medals": 13,
+      "rapi": 10.58,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Jamaica",
+      "expected_medals": 0.82,
+      "actual_medals": 11,
+      "rapi": 10.18,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Australia",
+      "expected_medals": 20.31,
+      "actual_medals": 29,
+      "rapi": 8.69,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Ukraine",
+      "expected_medals": 2.35,
+      "actual_medals": 11,
+      "rapi": 8.65,
+      "category": "Over baseline"
+    },
+    {
+      "country": "France",
+      "expected_medals": 33.7,
+      "actual_medals": 42,
+      "rapi": 8.3,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Cuba",
+      "expected_medals": 2.83,
+      "actual_medals": 11,
+      "rapi": 8.17,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Croatia",
+      "expected_medals": 2.04,
+      "actual_medals": 10,
+      "rapi": 7.96,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Denmark",
+      "expected_medals": 7.47,
+      "actual_medals": 15,
+      "rapi": 7.53,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Belarus",
+      "expected_medals": 1.87,
+      "actual_medals": 9,
+      "rapi": 7.13,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Serbia",
+      "expected_medals": 1.78,
+      "actual_medals": 8,
+      "rapi": 6.22,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Ethiopia",
+      "expected_medals": 1.83,
+      "actual_medals": 8,
+      "rapi": 6.17,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Georgia",
+      "expected_medals": 0.84,
+      "actual_medals": 7,
+      "rapi": 6.16,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Germany",
+      "expected_medals": 36.42,
+      "actual_medals": 42,
+      "rapi": 5.58,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Czech Republic",
+      "expected_medals": 5.63,
+      "actual_medals": 10,
+      "rapi": 4.37,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Armenia",
+      "expected_medals": 0.65,
+      "actual_medals": 4,
+      "rapi": 3.35,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Netherlands",
+      "expected_medals": 15.74,
+      "actual_medals": 19,
+      "rapi": 3.26,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Lithuania",
+      "expected_medals": 1.81,
+      "actual_medals": 4,
+      "rapi": 2.19,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Italy",
+      "expected_medals": 25.93,
+      "actual_medals": 28,
+      "rapi": 2.07,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Colombia",
+      "expected_medals": 6.07,
+      "actual_medals": 8,
+      "rapi": 1.93,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Slovenia",
+      "expected_medals": 2.14,
+      "actual_medals": 4,
+      "rapi": 1.86,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Poland",
+      "expected_medals": 9.36,
+      "actual_medals": 11,
+      "rapi": 1.64,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Tunisia",
+      "expected_medals": 1.56,
+      "actual_medals": 3,
+      "rapi": 1.44,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Mongolia",
+      "expected_medals": 0.64,
+      "actual_medals": 2,
+      "rapi": 1.36,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Canada",
+      "expected_medals": 20.89,
+      "actual_medals": 22,
+      "rapi": 1.11,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Bahamas",
+      "expected_medals": 0.93,
+      "actual_medals": 2,
+      "rapi": 1.07,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Greece",
+      "expected_medals": 4.95,
+      "actual_medals": 6,
+      "rapi": 1.05,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Bulgaria",
+      "expected_medals": 2.16,
+      "actual_medals": 3,
+      "rapi": 0.84,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Burundi",
+      "expected_medals": 0.16,
+      "actual_medals": 1,
+      "rapi": 0.84,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Grenada",
+      "expected_medals": 0.17,
+      "actual_medals": 1,
+      "rapi": 0.83,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Slovakia",
+      "expected_medals": 3.19,
+      "actual_medals": 4,
+      "rapi": 0.81,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Tajikistan",
+      "expected_medals": 0.36,
+      "actual_medals": 1,
+      "rapi": 0.64,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Fiji",
+      "expected_medals": 0.4,
+      "actual_medals": 1,
+      "rapi": 0.6,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Niger",
+      "expected_medals": 0.5,
+      "actual_medals": 1,
+      "rapi": 0.5,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Kosovo",
+      "expected_medals": 0.51,
+      "actual_medals": 1,
+      "rapi": 0.49,
+      "category": "Over baseline"
+    },
+    {
+      "country": "China",
+      "expected_medals": 69.63,
+      "actual_medals": 70,
+      "rapi": 0.37,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Ivory Coast",
+      "expected_medals": 1.66,
+      "actual_medals": 2,
+      "rapi": 0.34,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Bahrain",
+      "expected_medals": 1.85,
+      "actual_medals": 2,
+      "rapi": 0.15,
+      "category": "Over baseline"
+    },
+    {
+      "country": "Nauru",
+      "expected_medals": 0.03,
+      "actual_medals": 0,
+      "rapi": -0.03,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Kiribati",
+      "expected_medals": 0.04,
+      "actual_medals": 0,
+      "rapi": -0.04,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Marshall Islands",
+      "expected_medals": 0.05,
+      "actual_medals": 0,
+      "rapi": -0.05,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "expected_medals": 0.05,
+      "actual_medals": 0,
+      "rapi": -0.05,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Micronesia",
+      "expected_medals": 0.07,
+      "actual_medals": 0,
+      "rapi": -0.07,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Tonga",
+      "expected_medals": 0.08,
+      "actual_medals": 0,
+      "rapi": -0.08,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Palau",
+      "expected_medals": 0.08,
+      "actual_medals": 0,
+      "rapi": -0.08,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Vanuatu",
+      "expected_medals": 0.11,
+      "actual_medals": 0,
+      "rapi": -0.11,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Dominica",
+      "expected_medals": 0.12,
+      "actual_medals": 0,
+      "rapi": -0.12,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Comoros",
+      "expected_medals": 0.12,
+      "actual_medals": 0,
+      "rapi": -0.12,
+      "category": "Under baseline"
+    },
+    {
+      "country": "American Samoa",
+      "expected_medals": 0.12,
+      "actual_medals": 0,
+      "rapi": -0.12,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Samoa",
+      "expected_medals": 0.13,
+      "actual_medals": 0,
+      "rapi": -0.13,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Guinea-Bissau",
+      "expected_medals": 0.13,
+      "actual_medals": 0,
+      "rapi": -0.13,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Gambia",
+      "expected_medals": 0.13,
+      "actual_medals": 0,
+      "rapi": -0.13,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Solomon Islands",
+      "expected_medals": 0.16,
+      "actual_medals": 0,
+      "rapi": -0.16,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Timor-Leste",
+      "expected_medals": 0.17,
+      "actual_medals": 0,
+      "rapi": -0.17,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Venezuela",
+      "expected_medals": 3.19,
+      "actual_medals": 3,
+      "rapi": -0.19,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Lesotho",
+      "expected_medals": 0.2,
+      "actual_medals": 0,
+      "rapi": -0.2,
+      "category": "Under baseline"
+    },
+    {
+      "country": "San Marino",
+      "expected_medals": 0.21,
+      "actual_medals": 0,
+      "rapi": -0.21,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Cape Verde",
+      "expected_medals": 0.22,
+      "actual_medals": 0,
+      "rapi": -0.22,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Bhutan",
+      "expected_medals": 0.23,
+      "actual_medals": 0,
+      "rapi": -0.23,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Seychelles",
+      "expected_medals": 0.24,
+      "actual_medals": 0,
+      "rapi": -0.24,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Djibouti",
+      "expected_medals": 0.24,
+      "actual_medals": 0,
+      "rapi": -0.24,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Belize",
+      "expected_medals": 0.25,
+      "actual_medals": 0,
+      "rapi": -0.25,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Liberia",
+      "expected_medals": 0.25,
+      "actual_medals": 0,
+      "rapi": -0.25,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Suriname",
+      "expected_medals": 0.31,
+      "actual_medals": 0,
+      "rapi": -0.31,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Sierra Leone",
+      "expected_medals": 0.36,
+      "actual_medals": 0,
+      "rapi": -0.36,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Aruba",
+      "expected_medals": 0.38,
+      "actual_medals": 0,
+      "rapi": -0.38,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Togo",
+      "expected_medals": 0.38,
+      "actual_medals": 0,
+      "rapi": -0.38,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Mauritania",
+      "expected_medals": 0.39,
+      "actual_medals": 0,
+      "rapi": -0.39,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Maldives",
+      "expected_medals": 0.39,
+      "actual_medals": 0,
+      "rapi": -0.39,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Montenegro",
+      "expected_medals": 0.39,
+      "actual_medals": 0,
+      "rapi": -0.39,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Guyana",
+      "expected_medals": 0.4,
+      "actual_medals": 0,
+      "rapi": -0.4,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Andorra",
+      "expected_medals": 0.4,
+      "actual_medals": 0,
+      "rapi": -0.4,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Malawi",
+      "expected_medals": 0.42,
+      "actual_medals": 0,
+      "rapi": -0.42,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Estonia",
+      "expected_medals": 1.43,
+      "actual_medals": 1,
+      "rapi": -0.43,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Kyrgyzstan",
+      "expected_medals": 0.43,
+      "actual_medals": 0,
+      "rapi": -0.43,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Guinea",
+      "expected_medals": 0.46,
+      "actual_medals": 0,
+      "rapi": -0.46,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Rwanda",
+      "expected_medals": 0.47,
+      "actual_medals": 0,
+      "rapi": -0.47,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Barbados",
+      "expected_medals": 0.49,
+      "actual_medals": 0,
+      "rapi": -0.49,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Iran",
+      "expected_medals": 8.49,
+      "actual_medals": 8,
+      "rapi": -0.49,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Moldova",
+      "expected_medals": 0.52,
+      "actual_medals": 0,
+      "rapi": -0.52,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Burkina Faso",
+      "expected_medals": 0.52,
+      "actual_medals": 0,
+      "rapi": -0.52,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Guam",
+      "expected_medals": 0.52,
+      "actual_medals": 0,
+      "rapi": -0.52,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Spain",
+      "expected_medals": 17.53,
+      "actual_medals": 17,
+      "rapi": -0.53,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Madagascar",
+      "expected_medals": 0.54,
+      "actual_medals": 0,
+      "rapi": -0.54,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Mozambique",
+      "expected_medals": 0.56,
+      "actual_medals": 0,
+      "rapi": -0.56,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Benin",
+      "expected_medals": 0.57,
+      "actual_medals": 0,
+      "rapi": -0.57,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Cayman Islands",
+      "expected_medals": 0.58,
+      "actual_medals": 0,
+      "rapi": -0.58,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Chad",
+      "expected_medals": 0.6,
+      "actual_medals": 0,
+      "rapi": -0.6,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Syria",
+      "expected_medals": 0.62,
+      "actual_medals": 0,
+      "rapi": -0.62,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Jordan",
+      "expected_medals": 1.62,
+      "actual_medals": 1,
+      "rapi": -0.62,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Haiti",
+      "expected_medals": 0.62,
+      "actual_medals": 0,
+      "rapi": -0.62,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Republic of Congo",
+      "expected_medals": 0.62,
+      "actual_medals": 0,
+      "rapi": -0.62,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Namibia",
+      "expected_medals": 0.67,
+      "actual_medals": 0,
+      "rapi": -0.67,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Equatorial Guinea",
+      "expected_medals": 0.7,
+      "actual_medals": 0,
+      "rapi": -0.7,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Macedonia",
+      "expected_medals": 0.72,
+      "actual_medals": 0,
+      "rapi": -0.72,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Nicaragua",
+      "expected_medals": 0.73,
+      "actual_medals": 0,
+      "rapi": -0.73,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Albania",
+      "expected_medals": 0.73,
+      "actual_medals": 0,
+      "rapi": -0.73,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Afghanistan",
+      "expected_medals": 0.74,
+      "actual_medals": 0,
+      "rapi": -0.74,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Mali",
+      "expected_medals": 0.75,
+      "actual_medals": 0,
+      "rapi": -0.75,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Monaco",
+      "expected_medals": 0.77,
+      "actual_medals": 0,
+      "rapi": -0.77,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Mauritius",
+      "expected_medals": 0.78,
+      "actual_medals": 0,
+      "rapi": -0.78,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Senegal",
+      "expected_medals": 0.81,
+      "actual_medals": 0,
+      "rapi": -0.81,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Liechtenstein",
+      "expected_medals": 0.81,
+      "actual_medals": 0,
+      "rapi": -0.81,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Laos",
+      "expected_medals": 0.81,
+      "actual_medals": 0,
+      "rapi": -0.81,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Bermuda",
+      "expected_medals": 0.81,
+      "actual_medals": 0,
+      "rapi": -0.81,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Malta",
+      "expected_medals": 0.82,
+      "actual_medals": 0,
+      "rapi": -0.82,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Botswana",
+      "expected_medals": 0.87,
+      "actual_medals": 0,
+      "rapi": -0.87,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Gabon",
+      "expected_medals": 0.88,
+      "actual_medals": 0,
+      "rapi": -0.88,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Nepal",
+      "expected_medals": 0.9,
+      "actual_medals": 0,
+      "rapi": -0.9,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Zambia",
+      "expected_medals": 0.9,
+      "actual_medals": 0,
+      "rapi": -0.9,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Honduras",
+      "expected_medals": 0.91,
+      "actual_medals": 0,
+      "rapi": -0.91,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Zimbabwe",
+      "expected_medals": 0.92,
+      "actual_medals": 0,
+      "rapi": -0.92,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Brunei",
+      "expected_medals": 0.92,
+      "actual_medals": 0,
+      "rapi": -0.92,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Sweden",
+      "expected_medals": 11.94,
+      "actual_medals": 11,
+      "rapi": -0.94,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "expected_medals": 0.94,
+      "actual_medals": 0,
+      "rapi": -0.94,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Papua New Guinea",
+      "expected_medals": 0.99,
+      "actual_medals": 0,
+      "rapi": -0.99,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Thailand",
+      "expected_medals": 7.0,
+      "actual_medals": 6,
+      "rapi": -1.0,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Romania",
+      "expected_medals": 5.01,
+      "actual_medals": 4,
+      "rapi": -1.01,
+      "category": "Under baseline"
+    },
+    {
+      "country": "South Korea",
+      "expected_medals": 22.08,
+      "actual_medals": 21,
+      "rapi": -1.08,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Uganda",
+      "expected_medals": 1.09,
+      "actual_medals": 0,
+      "rapi": -1.09,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Cambodia",
+      "expected_medals": 1.09,
+      "actual_medals": 0,
+      "rapi": -1.09,
+      "category": "Under baseline"
+    },
+    {
+      "country": "El Salvador",
+      "expected_medals": 1.12,
+      "actual_medals": 0,
+      "rapi": -1.12,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Malaysia",
+      "expected_medals": 6.23,
+      "actual_medals": 5,
+      "rapi": -1.23,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Democratic Republic of the Congo",
+      "expected_medals": 1.25,
+      "actual_medals": 0,
+      "rapi": -1.25,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Boliva",
+      "expected_medals": 1.26,
+      "actual_medals": 0,
+      "rapi": -1.26,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Cameroon",
+      "expected_medals": 1.26,
+      "actual_medals": 0,
+      "rapi": -1.26,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Latvia",
+      "expected_medals": 1.32,
+      "actual_medals": 0,
+      "rapi": -1.32,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Sudan",
+      "expected_medals": 1.32,
+      "actual_medals": 0,
+      "rapi": -1.32,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Dominican Republic",
+      "expected_medals": 2.46,
+      "actual_medals": 1,
+      "rapi": -1.46,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Tanzania",
+      "expected_medals": 1.48,
+      "actual_medals": 0,
+      "rapi": -1.48,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Paraguay",
+      "expected_medals": 1.54,
+      "actual_medals": 0,
+      "rapi": -1.54,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Iceland",
+      "expected_medals": 1.55,
+      "actual_medals": 0,
+      "rapi": -1.55,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Turkmenistan",
+      "expected_medals": 1.6,
+      "actual_medals": 0,
+      "rapi": -1.6,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Myanmar",
+      "expected_medals": 1.61,
+      "actual_medals": 0,
+      "rapi": -1.61,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Morocco",
+      "expected_medals": 2.69,
+      "actual_medals": 1,
+      "rapi": -1.69,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Cyprus",
+      "expected_medals": 1.72,
+      "actual_medals": 0,
+      "rapi": -1.72,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Ghana",
+      "expected_medals": 1.83,
+      "actual_medals": 0,
+      "rapi": -1.83,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Libya",
+      "expected_medals": 1.9,
+      "actual_medals": 0,
+      "rapi": -1.9,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Angola",
+      "expected_medals": 1.9,
+      "actual_medals": 0,
+      "rapi": -1.9,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Lebanon",
+      "expected_medals": 1.95,
+      "actual_medals": 0,
+      "rapi": -1.95,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Guatemala",
+      "expected_medals": 2.16,
+      "actual_medals": 0,
+      "rapi": -2.16,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Uruguay",
+      "expected_medals": 2.21,
+      "actual_medals": 0,
+      "rapi": -2.21,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Algeria",
+      "expected_medals": 4.21,
+      "actual_medals": 2,
+      "rapi": -2.21,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Panama",
+      "expected_medals": 2.24,
+      "actual_medals": 0,
+      "rapi": -2.24,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Costa Rica",
+      "expected_medals": 2.41,
+      "actual_medals": 0,
+      "rapi": -2.41,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Sri Lanka",
+      "expected_medals": 2.45,
+      "actual_medals": 0,
+      "rapi": -2.45,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Vietnam",
+      "expected_medals": 4.52,
+      "actual_medals": 2,
+      "rapi": -2.52,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Ecuador",
+      "expected_medals": 2.95,
+      "actual_medals": 0,
+      "rapi": -2.95,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Oman",
+      "expected_medals": 2.96,
+      "actual_medals": 0,
+      "rapi": -2.96,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Egypt",
+      "expected_medals": 6.22,
+      "actual_medals": 3,
+      "rapi": -3.22,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Luxembourg",
+      "expected_medals": 3.39,
+      "actual_medals": 0,
+      "rapi": -3.39,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Brazil",
+      "expected_medals": 22.68,
+      "actual_medals": 19,
+      "rapi": -3.68,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Qatar",
+      "expected_medals": 4.68,
+      "actual_medals": 1,
+      "rapi": -3.68,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Iraq",
+      "expected_medals": 3.99,
+      "actual_medals": 0,
+      "rapi": -3.99,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Pakistan",
+      "expected_medals": 4.58,
+      "actual_medals": 0,
+      "rapi": -4.58,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Portugal",
+      "expected_medals": 5.75,
+      "actual_medals": 1,
+      "rapi": -4.75,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Peru",
+      "expected_medals": 4.87,
+      "actual_medals": 0,
+      "rapi": -4.87,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Philippines",
+      "expected_medals": 5.98,
+      "actual_medals": 1,
+      "rapi": -4.98,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Bangladesh",
+      "expected_medals": 4.99,
+      "actual_medals": 0,
+      "rapi": -4.99,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Belgium",
+      "expected_medals": 11.05,
+      "actual_medals": 6,
+      "rapi": -5.05,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Nigeria",
+      "expected_medals": 6.65,
+      "actual_medals": 1,
+      "rapi": -5.65,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Argentina",
+      "expected_medals": 9.72,
+      "actual_medals": 4,
+      "rapi": -5.72,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Chile",
+      "expected_medals": 5.89,
+      "actual_medals": 0,
+      "rapi": -5.89,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Norway",
+      "expected_medals": 10.19,
+      "actual_medals": 4,
+      "rapi": -6.19,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Finland",
+      "expected_medals": 7.22,
+      "actual_medals": 1,
+      "rapi": -6.22,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Israel",
+      "expected_medals": 8.28,
+      "actual_medals": 2,
+      "rapi": -6.28,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Ireland",
+      "expected_medals": 8.79,
+      "actual_medals": 2,
+      "rapi": -6.79,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Switzerland",
+      "expected_medals": 15.36,
+      "actual_medals": 7,
+      "rapi": -8.36,
+      "category": "Under baseline"
+    },
+    {
+      "country": "United Arab Emirates",
+      "expected_medals": 9.62,
+      "actual_medals": 1,
+      "rapi": -8.62,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Indonesia",
+      "expected_medals": 11.83,
+      "actual_medals": 3,
+      "rapi": -8.83,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Austria",
+      "expected_medals": 10.13,
+      "actual_medals": 1,
+      "rapi": -9.13,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Mexico",
+      "expected_medals": 15.6,
+      "actual_medals": 5,
+      "rapi": -10.6,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Japan",
+      "expected_medals": 54.43,
+      "actual_medals": 41,
+      "rapi": -13.43,
+      "category": "Under baseline"
+    },
+    {
+      "country": "Saudi Arabia",
+      "expected_medals": 13.46,
+      "actual_medals": 0,
+      "rapi": -13.46,
+      "category": "Under baseline"
+    },
+    {
+      "country": "USA",
+      "expected_medals": 137.86,
+      "actual_medals": 121,
+      "rapi": -16.86,
+      "category": "Under baseline"
+    },
+    {
+      "country": "India",
+      "expected_medals": 21.65,
+      "actual_medals": 2,
+      "rapi": -19.65,
+      "category": "Under baseline"
+    }
+  ]
+}

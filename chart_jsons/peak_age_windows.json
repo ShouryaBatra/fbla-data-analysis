@@ -1,0 +1,222 @@
+{
+  "description": "Data for the peak age windows chart \u2014 median medal-winning age for each Summer Olympic sport, with the 25th/75th percentile range (Q1/Q3) and IQR. Sorted youngest to oldest. For a simple bar chart use sport -> median_age; for a range/error-bar chart use q1 and q3 as the window.",
+  "data": [
+    {
+      "sport": "Rhythmic Gymnastics",
+      "median_age": 18.0,
+      "q1": 17.0,
+      "q3": 20.2,
+      "iqr": 3.2
+    },
+    {
+      "sport": "Swimming",
+      "median_age": 21.0,
+      "q1": 18.0,
+      "q3": 23.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Diving",
+      "median_age": 22.0,
+      "q1": 19.0,
+      "q3": 25.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Taekwondo",
+      "median_age": 23.0,
+      "q1": 21.0,
+      "q3": 26.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Synchronized Swimming",
+      "median_age": 23.0,
+      "q1": 22.0,
+      "q3": 26.0,
+      "iqr": 4.0
+    },
+    {
+      "sport": "Boxing",
+      "median_age": 23.0,
+      "q1": 21.0,
+      "q3": 25.0,
+      "iqr": 4.0
+    },
+    {
+      "sport": "Football",
+      "median_age": 23.0,
+      "q1": 22.0,
+      "q3": 27.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Gymnastics",
+      "median_age": 23.0,
+      "q1": 20.0,
+      "q3": 27.0,
+      "iqr": 7.0
+    },
+    {
+      "sport": "Athletics",
+      "median_age": 24.0,
+      "q1": 22.0,
+      "q3": 27.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Cycling",
+      "median_age": 24.0,
+      "q1": 21.0,
+      "q3": 27.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Table Tennis",
+      "median_age": 24.0,
+      "q1": 22.0,
+      "q3": 27.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Rowing",
+      "median_age": 25.0,
+      "q1": 22.0,
+      "q3": 28.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Weightlifting",
+      "median_age": 25.0,
+      "q1": 22.0,
+      "q3": 28.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Hockey",
+      "median_age": 25.0,
+      "q1": 23.0,
+      "q3": 28.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Judo",
+      "median_age": 25.0,
+      "q1": 23.0,
+      "q3": 27.0,
+      "iqr": 4.0
+    },
+    {
+      "sport": "Volleyball",
+      "median_age": 25.0,
+      "q1": 23.0,
+      "q3": 28.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Basketball",
+      "median_age": 25.0,
+      "q1": 22.0,
+      "q3": 28.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Water Polo",
+      "median_age": 25.0,
+      "q1": 23.0,
+      "q3": 29.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Badminton",
+      "median_age": 25.0,
+      "q1": 23.0,
+      "q3": 27.2,
+      "iqr": 4.2
+    },
+    {
+      "sport": "Tennis",
+      "median_age": 26.0,
+      "q1": 23.0,
+      "q3": 30.0,
+      "iqr": 7.0
+    },
+    {
+      "sport": "Softball",
+      "median_age": 26.0,
+      "q1": 24.0,
+      "q3": 29.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Wrestling",
+      "median_age": 26.0,
+      "q1": 23.0,
+      "q3": 28.0,
+      "iqr": 5.0
+    },
+    {
+      "sport": "Handball",
+      "median_age": 26.0,
+      "q1": 23.0,
+      "q3": 29.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Canoeing",
+      "median_age": 26.0,
+      "q1": 23.0,
+      "q3": 29.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Baseball",
+      "median_age": 26.0,
+      "q1": 23.0,
+      "q3": 29.0,
+      "iqr": 6.0
+    },
+    {
+      "sport": "Modern Pentathlon",
+      "median_age": 27.0,
+      "q1": 25.0,
+      "q3": 29.0,
+      "iqr": 4.0
+    },
+    {
+      "sport": "Archery",
+      "median_age": 27.0,
+      "q1": 22.0,
+      "q3": 38.0,
+      "iqr": 16.0
+    },
+    {
+      "sport": "Fencing",
+      "median_age": 28.0,
+      "q1": 24.0,
+      "q3": 32.0,
+      "iqr": 8.0
+    },
+    {
+      "sport": "Sailing",
+      "median_age": 30.0,
+      "q1": 26.0,
+      "q3": 36.0,
+      "iqr": 10.0
+    },
+    {
+      "sport": "Shooting",
+      "median_age": 32.0,
+      "q1": 27.0,
+      "q3": 39.0,
+      "iqr": 12.0
+    },
+    {
+      "sport": "Equestrianism",
+      "median_age": 34.0,
+      "q1": 29.0,
+      "q3": 41.0,
+      "iqr": 12.0
+    }
+  ]
+}
