@@ -1,0 +1,67 @@
+{
+  "description": "Data for the LA host-city recommendation chart \u2014 a horizontal bar chart of Rio 2016 athletes per LA28 venue zone, ranked by athlete count (highest first). The top three zones (Downtown/Exposition Park, Long Beach, Carson) are flagged with highlighted=true; together they hold 77% of all 11179 athletes. Plot athletes as bar length, zone as the category, and color the highlighted bars to show the concentration.",
+  "total_athletes": 11179,
+  "top3_share_pct": 76.7,
+  "data": [
+    {
+      "zone": "Downtown/Exposition Park",
+      "athletes": 4581,
+      "share_pct": 41.0,
+      "highlighted": true
+    },
+    {
+      "zone": "Long Beach",
+      "athletes": 2455,
+      "share_pct": 22.0,
+      "highlighted": true
+    },
+    {
+      "zone": "Carson",
+      "athletes": 1526,
+      "share_pct": 13.7,
+      "highlighted": true
+    },
+    {
+      "zone": "Inglewood",
+      "athletes": 1223,
+      "share_pct": 10.9,
+      "highlighted": false
+    },
+    {
+      "zone": "Pasadena",
+      "athletes": 609,
+      "share_pct": 5.4,
+      "highlighted": false
+    },
+    {
+      "zone": "Anaheim",
+      "athletes": 283,
+      "share_pct": 2.5,
+      "highlighted": false
+    },
+    {
+      "zone": "Arcadia",
+      "athletes": 200,
+      "share_pct": 1.8,
+      "highlighted": false
+    },
+    {
+      "zone": "Pacific Palisades",
+      "athletes": 120,
+      "share_pct": 1.1,
+      "highlighted": false
+    },
+    {
+      "zone": "Venice",
+      "athletes": 110,
+      "share_pct": 1.0,
+      "highlighted": false
+    },
+    {
+      "zone": "San Fernando Valley",
+      "athletes": 72,
+      "share_pct": 0.6,
+      "highlighted": false
+    }
+  ]
+}
