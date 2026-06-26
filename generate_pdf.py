@@ -10,7 +10,8 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.enums import TA_LEFT, TA_CENTER, TA_RIGHT, TA_JUSTIFY
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
                                 Spacer, Table, TableStyle, PageBreak, NextPageTemplate,
-                                KeepTogether)
+                                KeepTogether, Image)
+from PIL import Image as PILImage
 from reportlab.platypus.tableofcontents import TableOfContents
 from reportlab.platypus.flowables import HRFlowable
 from reportlab.pdfbase import pdfmetrics
@@ -231,10 +232,10 @@ frame_body = Frame(LM, BM, CONTENT_W, PAGE_H - TM - BM, id="body",
 frame_cover = Frame(LM, BM, CONTENT_W, PAGE_H - BM - 0.9 * inch, id="cover",
                     leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
 
-doc = Doc("Technical_Supplement.pdf", pagesize=letter,
+doc = Doc("Technical_Supplement copy.pdf", pagesize=letter,
           leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM,
           title="2028 Olympic Games Optimization — Technical Supplement",
-          author="Aaron, Roshan, Shourya")
+          author="Shourya Batra, Aaron Huang, Roshan Dileep")
 doc.addPageTemplates([
     PageTemplate(id="cover", frames=[frame_cover], onPage=cover_page),
     PageTemplate(id="body", frames=[frame_body], onPage=header_footer),
@@ -258,11 +259,11 @@ story.append(Paragraph("Prepared for SportsFanatics",
              white("cv_sub", fontName=BOLD, fontSize=15, textColor=colors.HexColor("#cfd6e0"),
                    alignment=TA_LEFT, leading=19)))
 story.append(Spacer(1, 0.20 * inch))
-story.append(Paragraph("This appendix documents the data and methods behind every figure in our presentation.",
-             white("cv_note", fontSize=10.5, textColor=colors.HexColor("#aab3c2"),
-                   alignment=TA_LEFT, leading=15)))
+story.append(Paragraph("This appendix documents the data and methods behind every figure and recommendation in our presentation.",
+             white("cv_note", fontSize=9.5, textColor=colors.HexColor("#aab3c2"),
+                   alignment=TA_LEFT, leading=14)))
 story.append(Spacer(1, 2.7 * inch))
-story.append(Paragraph("Aaron&nbsp;&nbsp;·&nbsp;&nbsp;Roshan&nbsp;&nbsp;·&nbsp;&nbsp;Shourya",
+story.append(Paragraph("Shourya Batra&nbsp;&nbsp;·&nbsp;&nbsp;Aaron Huang&nbsp;&nbsp;·&nbsp;&nbsp;Roshan Dileep",
              white("cv_names", fontName=BOLD, fontSize=13, alignment=TA_LEFT, leading=16)))
 story.append(Spacer(1, 0.10 * inch))
 story.append(Paragraph("FBLA  ·  Data Analysis",
@@ -281,51 +282,56 @@ toc.dotsMinLevel = 0
 story.append(toc)
 story.append(Spacer(1, 0.25 * inch))
 story.append(Paragraph(
-    "Each section is a self-contained reference. Appendices A–F give the full tables behind "
-    "the figures shown on screen; the Methodology Summary states data sources, models, and "
-    "assumptions for all three stakeholders.", small))
+    "Each section is a self-contained reference. The Presentation Charts reproduce every figure shown "
+    "on screen, and Appendices A–F give the full tables and methods behind them.", small))
 story.append(PageBreak())
 
-# ================================================================ METHODOLOGY
+# data handles used throughout the document
 A, B, C, Dd, E = D["appendixA"], D["appendixB"], D["appendixC"], D["appendixD"], D["appendixE"]
 
-story.append(Paragraph("Methodology Summary", h_app))
-story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=9))
+# ================================================================ PRESENTATION CHARTS
+cap = P("cap", fontSize=8.5, leading=11.5, textColor=MUTE, alignment=TA_CENTER, spaceBefore=3)
+chart_title = P("chart_title", fontName=BOLD, fontSize=11, textColor=NAVY, leading=14,
+                spaceBefore=2, spaceAfter=4)
 
-meth = [
-    ("Host City — Los Angeles (Appendix A)",
-     f"Source: historical Olympic athlete-event records (1896–2016) joined to NOC region data. "
-     f"Reference Games: <b>Rio 2016 (Summer)</b>, the most recent complete Summer Games in the data. "
-     f"Each sport is mapped to its official LA28 venue zone (March 2026 venue plan); multi-venue sports are "
-     f"assigned to their primary sub-venue. We count <b>unique athletes</b> (by athlete ID) per zone, so no "
-     f"athlete is double-counted. Scope: the <b>31 returning LA28 sports</b>, recorded as 34 categories in the "
-     f"dataset (Rhythmic Gymnastics & Trampolining group under Gymnastics; Beach Volleyball under Volleyball). "
-     f"Total athletes analysed: <b>{fmt_int(A['total_athletes'])}</b>."),
-    ("National Olympic Committees (Appendix B)",
-     f"We add World Bank external data — <b>GDP per capita (NY.GDP.PCAP.CD)</b> and <b>population "
-     f"(SP.POP.TOTL)</b>, 2016 — and model Rio 2016 medal counts with a <b>Poisson regression</b> on "
-     f"log(population) and log(GDP per capita). Poisson is the correct family because medals are non-negative "
-     f"count data. Expected medals are estimated <b>out-of-fold</b> (5-fold CV, no leakage); the residual "
-     f"(actual − expected) is the Resource-Adjusted Performance Index (RAPI). Out-of-fold "
-     f"<b>R² = {B['oof_r2']:.2f}</b> over {B['n_countries']} countries. Each underperformer is matched to its "
-     f"nearest <b>overperforming</b> peer by Euclidean distance in log-population / log-GDP space."),
-    ("Athletes (Appendices C & D)",
-     f"<b>Strategy clustering:</b> KMeans (k=2) groups countries as specialist vs generalist by how concentrated "
-     f"their all-time Summer medals are across sports, using event-level medal counts and a concentration "
-     f"feature set (Herfindahl index + effective number of sports); countries with fewer than "
-     f"{C['min_medals']} medals are excluded as statistically unstable. <b>Peak age windows:</b> for each sport "
-     f"with at least {Dd['min_medals']} medal-winning athletes on record, we report the median medal-winning "
-     f"age and the interquartile range (middle 50%)."),
-]
-for title, txt in meth:
-    story.append(Paragraph(title, h_sub))
-    story.append(Paragraph(txt, body))
-story.append(Spacer(1, 0.12 * inch))
+def chart_block(title, img_path, caption, width_in=5.2):
+    w, h = PILImage.open(img_path).size
+    iw = width_in * inch
+    ih = iw * h / w
+    img = Image(img_path, width=iw, height=ih)
+    img.hAlign = "CENTER"
+    return KeepTogether([
+        Paragraph(title, chart_title),
+        img,
+        Paragraph(caption, cap),
+        Spacer(1, 0.2 * inch),
+    ])
+
+story.append(Paragraph("Presentation Charts", h_app))
+story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=8))
 story.append(Paragraph(
-    "<b>Consistency note.</b> All medal-based figures use Rio 2016 as the reference Games and event-level "
-    "medal counts (one medal per event, not per athlete) unless a section states an all-time scope. "
-    "Every number in this document is computed directly from the datasets and notebooks in our repository.",
-    small))
+    "The four figures shown on screen during our presentation, reproduced here so judges can reference "
+    "them alongside the appendices. Each is the chart exactly as it appears in our slides.", lead))
+story.append(Spacer(1, 0.12 * inch))
+
+story.append(chart_block(
+    "Host City — Athlete Load by LA28 Venue Zone",
+    "chart_imgs/host_city_zone_load.png",
+    "Three zones — Downtown/Expo, Long Beach, and Carson (gold) — absorb ~77% of all athletes."))
+story.append(chart_block(
+    "Resource-Adjusted Medal Performance",
+    "chart_imgs/resource_adjusted_slide6.png",
+    "Each point is a country. Above the parity line = overperformer; below = underperformer."))
+
+story.append(PageBreak())
+story.append(chart_block(
+    "Country Strategy Clusters",
+    "chart_imgs/clusters_slide8.png",
+    "KMeans groups countries as specialists (medals concentrated in 1–2 sports) vs generalists."))
+story.append(chart_block(
+    "Athlete Peak Age Windows by Sport",
+    "chart_imgs/peak_age_windows.png",
+    "Median medal-winning age ranges from ~18 (rhythmic gymnastics) to ~34 (equestrian)."))
 story.append(PageBreak())
 
 # ================================================================ APPENDIX A
@@ -360,9 +366,7 @@ story.append(Paragraph("Appendix B — NOC Over / Underperformers", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     "Countries ranked by how far their Rio 2016 medal haul sits above or below the resource-adjusted "
-    "baseline — a model of expected medals given a country's population and economic capacity. "
-    "Overperformers beat their baseline; underperformers fall short. Each list runs from the largest gap "
-    "to the smallest.", lead))
+    "baseline.", lead))
 
 def name_rows(items):
     return [[r["country"]] for r in items]
@@ -398,11 +402,8 @@ story.append(Spacer(1, 0.3 * inch))
 story.append(Paragraph("Appendix C — Country Strategy Classification", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
-    f"KMeans (k=2) on all-time Summer event-level medals, classifying countries as "
-    f"<b>Specialist</b> (medals concentrated in 1–2 sports) or <b>Generalist</b> (spread across many). "
-    f"{C['n_classified']} countries meet the ≥ {C['min_medals']}-medal threshold "
-    f"({C['n_specialist']} specialist, {C['n_generalist']} generalist). "
-    f"<b>Top sport</b> is the single discipline in which a country has won the most medals.", lead))
+    "KMeans (k=2) on all-time Summer event-level medals, classifying countries as "
+    "<b>Specialist</b> or <b>Generalist</b>.", lead))
 
 def crows(items):
     out = [["Country", "Medals", "Top sport"]]
@@ -420,15 +421,9 @@ story.append(Spacer(1, 0.14 * inch))
 story.append(Paragraph("Generalists (most diversified first)", h_sub))
 story.append(multicol(crows(gen)[0], crows(gen)[1:], CW_C, AL_C, ncols=2, big=True))
 story.append(Spacer(1, 0.12 * inch))
-pk = C.get("pakistan_note", {})
 story.append(Paragraph(
     f"<b>Footnote — low-medal countries.</b> Countries with fewer than {C['min_medals']} event-level "
-    f"medals are excluded because share-based concentration is unstable at low counts. By inspection these "
-    f"are typically clear specialists: e.g. <b>Pakistan</b> ({pk.get('total_medals','~10')} medals, "
-    f"{pk.get('top_share',80):.0f}% in {pk.get('top_sport','Hockey')}) is intuitively a specialist but falls "
-    f"below threshold, so it is reported here rather than given an unstable cluster label. Labels reflect "
-    f"degree of concentration, not which sport — a country specialised in an unusual sport (e.g. India in "
-    f"field hockey) is correctly a specialist.", small))
+    f"medals are excluded because share-based concentration is unstable at low counts.", small))
 story.append(PageBreak())
 
 # ================================================================ APPENDIX D
@@ -436,9 +431,8 @@ story.append(Paragraph("Appendix D — Peak Age Windows per Sport", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     f"Median medal-winning age and interquartile range (middle 50%) for every Summer sport with at least "
-    f"<b>{Dd['min_medals']}</b> medal-winning athletes on record, sorted youngest to oldest. Q1 / Q3 are the "
-    f"25th / 75th age percentiles; IQR = Q3 − Q1. Discontinued events (Art Competitions, 15-a-side Rugby) are "
-    f"excluded.", lead))
+    f"<b>{Dd['min_medals']}</b> medal-winning athletes on record, sorted youngest to oldest.<br/>"
+    f"Q1 / Q3 are the 25th / 75th age percentiles; IQR = Q3 − Q1.", lead))
 
 drows = [["Sport", "Median", "Q1", "Q3", "IQR"]]
 for r in Dd["rows"]:
@@ -446,11 +440,9 @@ for r in Dd["rows"]:
                   f"{r['iqr']:.1f}"])
 story.append(multicol(drows[0], drows[1:],
                       [1.35, 0.75, 0.55, 0.55, 0.6], ["l", "r", "r", "r", "r"], ncols=2, big=True))
-story.append(Spacer(1, 0.07 * inch))
+story.append(Spacer(1, 0.10 * inch))
 story.append(Paragraph(
-    "Early-peak / tight-window sports (e.g. Rhythmic Gymnastics, median 18) reward physical peak; late-peak "
-    "sports (Shooting 32, Equestrianism 34) reward accumulated experience — development pipelines should be "
-    "sport-specific.", small))
+    "<b>Footnote.</b> Discontinued events (Art Competitions, 15-a-side Rugby) are excluded.", small))
 story.append(PageBreak())
 
 # ================================================================ APPENDIX E
@@ -517,4 +509,4 @@ story.append(Paragraph(
 
 # ---------------------------------------------------------------- build
 doc.multiBuild(story)
-print("PDF written -> Technical_Supplement.pdf")
+print("PDF written -> Technical_Supplement copy.pdf")
