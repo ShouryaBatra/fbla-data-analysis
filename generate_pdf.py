@@ -208,7 +208,7 @@ def header_footer(canvas, doc):
     canvas.line(LM, BM - 10, PAGE_W - RM, BM - 10)
     canvas.setFont(REG, 7.5)
     canvas.setFillColor(MUTE)
-    canvas.drawString(LM, BM - 21, "SportsFanatics  ·  2028 Olympic Games Optimization — Technical Supplement")
+    canvas.drawString(LM, BM - 21, "SportsFanatics  ·  2028 Olympic Games Optimization  ·  Technical Supplement")
     canvas.drawRightString(PAGE_W - RM, BM - 21, f"{doc.page}")
     # top accent tab
     canvas.setFillColor(NAVY)
@@ -234,7 +234,7 @@ frame_cover = Frame(LM, BM, CONTENT_W, PAGE_H - BM - 0.9 * inch, id="cover",
 
 doc = Doc("Technical_Supplement copy.pdf", pagesize=letter,
           leftMargin=LM, rightMargin=RM, topMargin=TM, bottomMargin=BM,
-          title="2028 Olympic Games Optimization — Technical Supplement",
+          title="2028 Olympic Games Optimization  ·  Technical Supplement",
           author="Shourya Batra, Aaron Huang, Roshan Dileep")
 doc.addPageTemplates([
     PageTemplate(id="cover", frames=[frame_cover], onPage=cover_page),
@@ -308,16 +308,12 @@ def chart_block(title, img_path, caption, width_in=5.2):
     ])
 
 story.append(Paragraph("Presentation Charts", h_app))
-story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=8))
-story.append(Paragraph(
-    "The four figures shown on screen during our presentation, reproduced here so judges can reference "
-    "them alongside the appendices. Each is the chart exactly as it appears in our slides.", lead))
-story.append(Spacer(1, 0.12 * inch))
+story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=10))
 
 story.append(chart_block(
-    "Host City — Athlete Load by LA28 Venue Zone",
+    "Host City: Athlete Load by LA28 Venue Zone",
     "chart_imgs/host_city_zone_load.png",
-    "Three zones — Downtown/Expo, Long Beach, and Carson (gold) — absorb ~77% of all athletes."))
+    "Three zones (Downtown/Expo, Long Beach, and Carson, in gold) absorb ~77% of all athletes."))
 story.append(chart_block(
     "Resource-Adjusted Medal Performance",
     "chart_imgs/resource_adjusted_slide6.png",
@@ -335,7 +331,7 @@ story.append(chart_block(
 story.append(PageBreak())
 
 # ================================================================ APPENDIX A
-story.append(Paragraph("Appendix A — Host-City Zone Load", h_app))
+story.append(Paragraph("Appendix A: Host-City Zone Load", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     f"Unique athletes per LA28 venue zone, Rio 2016 reference. Top three zones "
@@ -350,7 +346,7 @@ story.append(styled_table(rows,
              ["l", "r", "r"], big=True))
 story.append(PageBreak())
 
-story.append(Paragraph("Appendix A — Sport-to-Zone Mapping", h_app2))
+story.append(Paragraph("Appendix A: Sport-to-Zone Mapping", h_app2))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     "Every sport mapped to its LA28 venue zone, with the number of Rio 2016 athletes in that sport.", lead))
@@ -362,7 +358,7 @@ story.append(multicol(["Sport", "Zone", "Athletes"], smrows,
 story.append(PageBreak())
 
 # ================================================================ APPENDIX B
-story.append(Paragraph("Appendix B — NOC Over / Underperformers", h_app))
+story.append(Paragraph("Appendix B: NOC Over / Underperformers", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     "Countries ranked by how far their Rio 2016 medal haul sits above or below the resource-adjusted "
@@ -371,22 +367,22 @@ story.append(Paragraph(
 def name_rows(items):
     return [[r["country"]] for r in items]
 
-story.append(Paragraph(f"B.1 — Overperformers (all {B['n_over']} countries)", h_sub))
+story.append(Paragraph(f"B.1 Overperformers (all {B['n_over']} countries)", h_sub))
 story.append(multicol(["Country"], name_rows(B["overperformers"]),
                       [1.0], ["l"], ncols=3, big=True))
 story.append(Spacer(1, 0.16 * inch))
 
-story.append(Paragraph(f"B.2 — Underperformers (all {B['n_under_focused']} countries)", h_sub))
+story.append(Paragraph(f"B.2 Underperformers (all {B['n_under_focused']} countries)", h_sub))
 story.append(multicol(["Country"], name_rows(B["underperformers"]),
                       [1.0], ["l"], ncols=3, big=True))
 story.append(PageBreak())
 
 # B.3 peer table
-story.append(Paragraph("B.3 — Peer Benchmark: recommended peer", h_app))
+story.append(Paragraph("B.3 Peer Benchmark: recommended peer", h_app2))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     "For each underperformer, the overperforming country with the most similar resource profile (population "
-    "and economic capacity) — the benchmark whose model that NOC should study and adapt.", lead))
+    "and economic capacity), the benchmark whose model that NOC should study and adapt.", lead))
 story.append(Spacer(1, 0.04 * inch))
 
 # Manual override: Jordan's recommended peer is Belarus (see presentation).
@@ -399,7 +395,7 @@ story.append(multicol(prows[0], prows[1:],
 story.append(Spacer(1, 0.3 * inch))
 
 # ================================================================ APPENDIX C
-story.append(Paragraph("Appendix C — Country Strategy Classification", h_app))
+story.append(Paragraph("Appendix C: Country Strategy Classification", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     "KMeans (k=2) on all-time Summer event-level medals, classifying countries as "
@@ -422,12 +418,12 @@ story.append(Paragraph("Generalists (most diversified first)", h_sub))
 story.append(multicol(crows(gen)[0], crows(gen)[1:], CW_C, AL_C, ncols=2, big=True))
 story.append(Spacer(1, 0.12 * inch))
 story.append(Paragraph(
-    f"<b>Footnote — low-medal countries.</b> Countries with fewer than {C['min_medals']} event-level "
+    f"<b>Footnote: low-medal countries.</b> Countries with fewer than {C['min_medals']} event-level "
     f"medals are excluded because share-based concentration is unstable at low counts.", small))
 story.append(PageBreak())
 
 # ================================================================ APPENDIX D
-story.append(Paragraph("Appendix D — Peak Age Windows per Sport", h_app))
+story.append(Paragraph("Appendix D: Peak Age Windows per Sport", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
     f"Median medal-winning age and interquartile range (middle 50%) for every Summer sport with at least "
@@ -446,10 +442,10 @@ story.append(Paragraph(
 story.append(PageBreak())
 
 # ================================================================ APPENDIX E
-story.append(Paragraph("Appendix E — New LA28 Sports (scope addendum)", h_app))
+story.append(Paragraph("Appendix E: New LA28 Sports (scope addendum)", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 story.append(Paragraph(
-    "Five sports are added for LA28. <b>Four — cricket, flag football, lacrosse, squash — are absent from the "
+    "Five sports are added for LA28. <b>Four of them (cricket, flag football, lacrosse, squash) are absent from the "
     "historical data</b>, so they sit outside the quantitative zone model; the estimates below are "
     "forward-looking, anchored to comparable existing sports (Rio 2016 athlete counts). <b>Baseball and "
     "softball</b> were Olympic sports through Beijing 2008 and <i>do</i> appear in the data, so their figures "
@@ -457,13 +453,13 @@ story.append(Paragraph(
 
 cmp = E["comparables"]
 erows = [["New sport", "LA28 venue / zone (per LA28 plan)", "Comparable sport", "Est. athlete load"]]
-erows.append(["Cricket (T20)", "Fairgrounds — Pomona", f"Field Hockey ({cmp['Hockey (field)']})",
+erows.append(["Cricket (T20)", "Fairgrounds, Pomona", f"Field Hockey ({cmp['Hockey (field)']})",
               f"≈ {cmp['Hockey (field)']} (mid-size team sport)"])
 erows.append(["Baseball", "Stadium venue (returning sport)", "Observed, Beijing 2008",
               f"{cmp['Baseball (Beijing 2008)']} (historical)"])
 erows.append(["Softball", "Stadium venue (returning sport)", "Observed, Beijing 2008",
               f"{cmp['Softball (Beijing 2008)']} (historical)"])
-erows.append(["Lacrosse (Sixes)", "Field venue — Carson cluster", f"Rugby Sevens ({cmp['Rugby Sevens']})",
+erows.append(["Lacrosse (Sixes)", "Field venue, Carson cluster", f"Rugby Sevens ({cmp['Rugby Sevens']})",
               f"≈ {cmp['Rugby Sevens']} (small-side team sport)"])
 erows.append(["Flag Football", "Stadium venue", f"Rugby Sevens / Basketball",
               f"≈ {cmp['Basketball']} (small-roster teams)"])
@@ -481,14 +477,14 @@ story.append(Paragraph(
 story.append(PageBreak())
 
 # ================================================================ APPENDIX F
-story.append(Paragraph("Appendix F — Data Sources & Reproducibility", h_app))
+story.append(Paragraph("Appendix F: Data Sources & Reproducibility", h_app))
 story.append(HRFlowable(width="100%", thickness=1, color=GOLD, spaceBefore=2, spaceAfter=7))
 
 frows = [["Dataset", "Detail"]]
-frows.append(["Olympic athlete events", "athlete_events.csv — 271,116 athlete-event rows, 1896–2016 (Kaggle / Sports Reference)"])
-frows.append(["NOC regions", "noc_regions.csv — National Olympic Committee to country mapping"])
-frows.append(["World Bank — GDP per capita", "Indicator NY.GDP.PCAP.CD (current US$), 2016"])
-frows.append(["World Bank — Population", "Indicator SP.POP.TOTL (total population), 2016"])
+frows.append(["Olympic athlete events", "athlete_events.csv: 271,116 athlete-event rows, 1896–2016 (Kaggle / Sports Reference)"])
+frows.append(["NOC regions", "noc_regions.csv: National Olympic Committee to country mapping"])
+frows.append(["World Bank: GDP per capita", "Indicator NY.GDP.PCAP.CD (current US$), 2016"])
+frows.append(["World Bank: Population", "Indicator SP.POP.TOTL (total population), 2016"])
 frows.append(["LA28 venue plan", "Official LA28 venue-to-sport assignments (March 2026 map)"])
 story.append(styled_table(frows, [1.6 * inch, 4.5 * inch], ["l", "l"]))
 story.append(Spacer(1, 0.12 * inch))
